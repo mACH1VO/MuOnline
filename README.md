@@ -3,10 +3,14 @@ MuOnline
 
 MuOnline
 
-Step 1, install all .NET Frameworks. (including client profiles)
+Step 1, install all .NET Frameworks. (including client profiles) and Microsoft Visual C++ 2010 Redistributable Package (x86) and (x64)
+
 Step 2, install DirectX End-User Runtimes (June 2010)
-Step 3, install Microsoft Visual C++ 2010 Redistributable Package (x86) and (x64)
-Step 4, install mysql workbech (need Visual C++ Redistributable)
+
+
+Step 3, install mysql workbech (need Visual C++ Redistributable)
+
+
 
 Dependencies: https://mega.co.nz/#!1ZtA0CoI!LNOiJ15_NZSXdnvxKNEO5foJc5gVxF9Emj_qvAYVH8I
 
