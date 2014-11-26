@@ -29,7 +29,7 @@ Step 5, extract dep, boost and media in MuOnline folder. (uncompressed boost is 
 Step 6, open mysql workbench, open root connection, go to Server->Data Import, and select muonline.sql (located in DataBase folder, Dirac server, this should restore the db, it's quite empty but dirac needs it!.)
 
 
-Step 7, open Dirac solution (v 10 or 13), build it, open config.ini, in the [DataBaseConfig] section, write your user and password 
+Step 7, open Dirac solution (v 10 or 12/13), build it, open config.ini, in the [DataBaseConfig] section, write your user and password 
 
 
 Step 8, Open MU.sln, select release config, second click in the solution, REBUILD ALL. (could take hours)
