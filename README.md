@@ -26,7 +26,7 @@ Media: https://mega.co.nz/#!cZ8SRKDR!UZ29pvQKiv31vmnVkaMyIehuLbbAQ6IBOYi2JVr9PA8
 step 5, extract dep, boost and media in MuOnline folder.
 
 
-Step 6, open mysql workbench, open connection, go to Server->Data Import, and select muonline.sql (located in DataBase folder, Dirac server)
+Step 6, open mysql workbench, open connection, go to Server->Data Import, and select muonline.sql (located in DataBase folder, Dirac server, this should restore the db, pretty empty but dirac needs it!.)
 
 
 Step 7, Open Dirac solution (v 10 or 13), build it, open config.ini, in the [DataBaseConfig] section, write your user and password 
