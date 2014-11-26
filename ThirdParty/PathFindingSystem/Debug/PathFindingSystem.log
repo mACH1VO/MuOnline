@@ -1,0 +1,14 @@
+﻿Build started 26/11/2014 04:21:51 a.m..
+     1>Project "E:\MegaProjectNative\ThirdParty\PathFindingSystem\PathFindingSystem.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\PathFindingSystem.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\PathFindingSystem.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       FinalizeBuildStatus:
+         Deleting file "Debug\PathFindingSystem.unsuccessfulbuild".
+         Touching "Debug\PathFindingSystem.lastbuildstate".
+     1>Done Building Project "E:\MegaProjectNative\ThirdParty\PathFindingSystem\PathFindingSystem.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.21

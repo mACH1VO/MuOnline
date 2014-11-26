@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\MU\Common\Input\Win32\InputManager.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\MU\Common\Input\Win32\PointerManager.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\MU\Common\Base\Ogre\BaseManager.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\MU\Common\Base\Ogre\BaseManager.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\MU\Common\Input\Win32\InputManager.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\MU\Common\Input\Win32\PointerManager.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\MU\Common\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Base">
+      <UniqueIdentifier>{B50FD730-0483-4865-8467-89B3B9A34CF8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{597A921D-55BC-4444-865A-245BC57942AA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MegaProjectNative</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\Debug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\Release\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Common;$(SolutionDir)Components\Terrain\include;$(SolutionDir)Components\Overlay\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)ThirdParty\Recast\include;$(SolutionDir)ThirdParty\Detour\include;$(SolutionDir)MegaProjectNative\PathFindingSystem;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)include;$(SolutionDir)OgreMain\include;$(SolutionDir)MyGUIEngine\include;$(SolutionDir)boost-1.56-vc100;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
+      <AdditionalOptions>/Zm2000 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)lib\Debug\OgreMain_d.lib;$(SolutionDir)lib\Debug\Recast_d.lib;$(SolutionDir)lib\Debug\Detour_d.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_thread-vc100-mt-gd-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_date_time-vc100-mt-gd-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_system-vc100-mt-gd-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_chrono-vc100-mt-gd-1_56.lib;$(SolutionDir)lib\Debug\OgreRTShaderSystem_d.lib;$(SolutionDir)lib\Debug\OgreTerrain_d.lib;$(SolutionDir)lib\Debug\OgrePaging_d.lib;$(SolutionDir)lib\Debug\OgreVolume_d.lib;$(SolutionDir)lib\Debug\OgreOverlay_d.lib;$(SolutionDir)Dependencies\lib\Debug\OIS_d.lib;$(SolutionDir)lib\Debug\MyGUIEngine_d.lib;$(SolutionDir)lib\Debug\MyGUI.OgrePlatform_d.lib;$(SolutionDir)Dependencies\lib\Debug\freetype253_D.lib;$(SolutionDir)lib\Debug\Common_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Common;$(SolutionDir)Components\Terrain\include;$(SolutionDir)Components\Overlay\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)ThirdParty\Recast\include;$(SolutionDir)ThirdParty\Detour\include;$(SolutionDir)MegaProjectNative\PathFindingSystem;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)include;$(SolutionDir)OgreMain\include;$(SolutionDir)MyGUIEngine\include;$(SolutionDir)boost-1.56-vc100;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>stdafx.h</ForcedIncludeFiles>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)lib\Release\OgreMain.lib;$(SolutionDir)lib\Release\Recast.lib;$(SolutionDir)lib\Release\Detour.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_thread-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_date_time-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_system-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_chrono-vc100-mt-1_56.lib;$(SolutionDir)lib\Release\OgreRTShaderSystem.lib;$(SolutionDir)lib\Release\OgreTerrain.lib;$(SolutionDir)lib\Release\OgrePaging.lib;$(SolutionDir)lib\Release\OgreVolume.lib;$(SolutionDir)lib\Release\OgreOverlay.lib;$(SolutionDir)Dependencies\lib\Release\OIS.lib;$(SolutionDir)lib\Release\MyGUIEngine.lib;$(SolutionDir)lib\Release\MyGUI.OgrePlatform.lib;$(SolutionDir)Dependencies\lib\Release\freetype253.lib;$(SolutionDir)lib\Release\Common.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AAttribute.cpp" />
+    <ClCompile Include="AnimationBlendData.cpp" />
+    <ClCompile Include="AnimationBlender2.cpp" />
+    <ClCompile Include="AttributeB.cpp" />
+    <ClCompile Include="AttributeF.cpp" />
+    <ClCompile Include="AttributeI.cpp" />
+    <ClCompile Include="AuctionHouse.cpp" />
+    <ClCompile Include="AvailableSkillListMessage.cpp" />
+    <ClCompile Include="ACDClientTranslateMessage.cpp" />
+    <ClCompile Include="AssignStatMessage.cpp" />
+    <ClCompile Include="BlurListener.cpp" />
+    <ClCompile Include="GlowListener.cpp" />
+    <ClCompile Include="MapQueryHelper.cpp" />
+    <ClCompile Include="HandSkill.cpp" />
+    <ClCompile Include="MonsterData.cpp" />
+    <ClCompile Include="EffectFactory.cpp" />
+    <ClCompile Include="TooltipItem.cpp" />
+    <ClCompile Include="TransformInventoryUtil.cpp" />
+    <ClCompile Include="GameAttributes.cpp" />
+    <ClCompile Include="AttributesSetValuesMessage.cpp" />
+    <ClCompile Include="GameAttributeUtil.cpp" />
+    <ClCompile Include="IAttributable.cpp" />
+    <ClCompile Include="MaterialUtil.cpp" />
+    <ClCompile Include="SkillListMessage.cpp" />
+    <ClCompile Include="ComboSkill.cpp" />
+    <ClCompile Include="StrikeofDestructionSkill.cpp" />
+    <ClCompile Include="InnerSkill.cpp" />
+    <ClCompile Include="ImpaleSkill.cpp" />
+    <ClCompile Include="RaidSkill.cpp" />
+    <ClCompile Include="DefenseSkill.cpp" />
+    <ClCompile Include="SlashSkill.cpp" />
+    <ClCompile Include="LungeSkill.cpp" />
+    <ClCompile Include="UppercutSkill.cpp" />
+    <ClCompile Include="FallingSlashSkill.cpp" />
+    <ClCompile Include="CometfallSkill.cpp" />
+    <ClCompile Include="InventoryRequestJewelUse.cpp" />
+    <ClCompile Include="GFXManager.cpp" />
+    <ClCompile Include="ColorCorrectionListener.cpp" />
+    <ClCompile Include="GloomListener.cpp" />
+    <ClCompile Include="PoissonBlurListener.cpp" />
+    <ClCompile Include="VignettingListener.cpp" />
+    <ClCompile Include="HellfireSkill.cpp" />
+    <ClCompile Include="FlameSkill.cpp" />
+    <ClCompile Include="RagefulBlowSkill.cpp" />
+    <ClCompile Include="InventoryRequestSellItemMessage.cpp" />
+    <ClCompile Include="InventoryRequestBuyItemMessage.cpp" />
+    <ClCompile Include="DeathStabSkill.cpp" />
+    <ClCompile Include="DestroyInventoryItemMessage.cpp" />
+    <ClCompile Include="GameGlobals.cpp" />
+    <ClCompile Include="StatsPanel.cpp" />
+    <ClCompile Include="TestCompositorListener.cpp" />
+    <ClCompile Include="GrayScaleListener.cpp" />
+    <ClCompile Include="InventoryCloseWindowMessage.cpp" />
+    <ClCompile Include="InventoryShowWindowMessage.cpp" />
+    <ClCompile Include="InventoryDropItemMessage.cpp" />
+    <ClCompile Include="BaseInventory.cpp" />
+    <ClCompile Include="InventoryMessageHandler.cpp" />
+    <ClCompile Include="NPC.cpp" />
+    <ClCompile Include="MovePanel.cpp" />
+    <ClCompile Include="NPCData.cpp" />
+    <ClCompile Include="PlayerData.cpp" />
+    <ClCompile Include="ShopPanel.cpp" />
+    <ClCompile Include="SkillFactory.cpp" />
+    <ClCompile Include="ShopInventory.cpp" />
+    <ClCompile Include="StashInventory.cpp" />
+    <ClCompile Include="StashPanel.cpp" />
+    <ClCompile Include="CycloneSkill.cpp" />
+    <ClCompile Include="TwistingSkill.cpp" />
+    <ClCompile Include="VisualEquipmentMessage.cpp" />
+    <ClCompile Include="InventoryResponseMoveMessage.cpp" />
+    <ClCompile Include="InventoryRequestMoveMessage.cpp" />
+    <ClCompile Include="CreateInventoryItemMessage.cpp" />
+    <ClCompile Include="ACDDestroyActorMessage.cpp" />
+    <ClCompile Include="InventoryItem.cpp" />
+    <ClCompile Include="InventoryPanel.cpp" />
+    <ClCompile Include="TargetMessage.cpp" />
+    <ClCompile Include="ACDEnterMapMessage.cpp" />
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="AnimationBlender.cpp" />
+    <ClCompile Include="ArrayUtil.cpp" />
+    <ClCompile Include="BitConverterUtil.cpp" />
+    <ClCompile Include="ButtomBar.cpp" />
+    <ClCompile Include="CameraMan.cpp" />
+    <ClCompile Include="Chat.cpp" />
+    <ClCompile Include="DebugPanel.cpp" />
+    <ClCompile Include="DotSceneLoader.cpp" />
+    <ClCompile Include="EncodingUTF8.cpp" />
+    <ClCompile Include="Equipment.cpp" />
+    <ClCompile Include="Extension.cpp" />
+    <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="GameBitBuffer.cpp" />
+    <ClCompile Include="ACDCreateActorMessage.cpp" />
+    <ClCompile Include="GameChangeSceneMessage.cpp" />
+    <ClCompile Include="GameClient.cpp" />
+    <ClCompile Include="GameFramework.cpp" />
+    <ClCompile Include="GameGUI.cpp" />
+    <ClCompile Include="GameMessage.cpp" />
+    <ClCompile Include="GameSetupMessage.cpp" />
+    <ClCompile Include="ChatMessage.cpp" />
+    <ClCompile Include="GameTickMessage.cpp" />
+    <ClCompile Include="PlayerInventory.cpp" />
+    <ClCompile Include="ISkill.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemData.cpp" />
+    <ClCompile Include="LinearTrajectorie.cpp" />
+    <ClCompile Include="LoginPanel.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MegaProjectNative.cpp" />
+    <ClCompile Include="MenuPanel.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="MuLogListener.cpp" />
+    <ClCompile Include="MuPath.cpp" />
+    <ClCompile Include="MuRenderQueueListener.cpp" />
+    <ClCompile Include="NewPlayerMessage.cpp" />
+    <ClCompile Include="PathFindingSystem\AnimateableCharacter.cpp" />
+    <ClCompile Include="PathFindingSystem\Character.cpp" />
+    <ClCompile Include="PathFindingSystem\ConvexShapeObstacle.cpp" />
+    <ClCompile Include="PathFindingSystem\CrowdManager.cpp" />
+    <ClCompile Include="PathFindingSystem\CylinderObstacle.cpp" />
+    <ClCompile Include="PathFindingSystem\Obstacle.cpp" />
+    <ClCompile Include="PathFindingSystem\OgreDetourCrowd.cpp" />
+    <ClCompile Include="PathFindingSystem\OgreDetourTileCache.cpp" />
+    <ClCompile Include="PathFindingSystem\OgreRecast.cpp" />
+    <ClCompile Include="PathFindingSystem\OgreRecastNavmeshPruner.cpp" />
+    <ClCompile Include="PathFindingSystem\RecastConvexHull.cpp" />
+    <ClCompile Include="PathFindingSystem\RecastInputGeom.cpp" />
+    <ClCompile Include="PathFindingSystem\SettingsFileParser.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="ProfilingPanel.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Storage.cpp" />
+    <ClCompile Include="TickTimer.cpp" />
+    <ClCompile Include="NetAttributeKeyValue.cpp" />
+    <ClCompile Include="VisualItem.cpp" />
+    <ClCompile Include="WingComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimationBlendData.h" />
+    <ClInclude Include="AnimationBlender2.h" />
+    <ClInclude Include="AttributeB.h" />
+    <ClInclude Include="AttributeF.h" />
+    <ClInclude Include="AttributeI.h" />
+    <ClInclude Include="AttributeValue.h" />
+    <ClInclude Include="AAttribute.h" />
+    <ClInclude Include="AuctionHouse.h" />
+    <ClInclude Include="AvailableSkillListMessage.h" />
+    <ClInclude Include="ACDClientTranslateMessage.h" />
+    <ClInclude Include="AssignStatMessage.h" />
+    <ClInclude Include="BlurListener.h" />
+    <ClInclude Include="GlowListener.h" />
+    <ClInclude Include="MapQueryHelper.h" />
+    <ClInclude Include="HandSkill.h" />
+    <ClInclude Include="MonsterData.h" />
+    <ClInclude Include="EffectFactory.h" />
+    <ClInclude Include="TooltipItem.h" />
+    <ClInclude Include="TransformInventoryUtil.h" />
+    <ClInclude Include="GameAttributes.h" />
+    <ClInclude Include="AttributesSetValuesMessage.h" />
+    <ClInclude Include="GameAttributeUtil.h" />
+    <ClInclude Include="IAttributable.h" />
+    <ClInclude Include="MaterialUtil.h" />
+    <ClInclude Include="RenderBox.h" />
+    <ClInclude Include="RenderBoxScene.h" />
+    <ClInclude Include="SkillListMessage.h" />
+    <ClInclude Include="ComboSkill.h" />
+    <ClInclude Include="StrikeofDestructionSkill.h" />
+    <ClInclude Include="InnerSkill.h" />
+    <ClInclude Include="ImpaleSkill.h" />
+    <ClInclude Include="RaidSkill.h" />
+    <ClInclude Include="DefenseSkill.h" />
+    <ClInclude Include="SlashSkill.h" />
+    <ClInclude Include="LungeSkill.h" />
+    <ClInclude Include="UppercutSkill.h" />
+    <ClInclude Include="FallingSlashSkill.h" />
+    <ClInclude Include="CometfallSkill.h" />
+    <ClInclude Include="InventoryRequestJewelUse.h" />
+    <ClInclude Include="GFXManager.h" />
+    <ClInclude Include="ColorCorrectionListener.h" />
+    <ClInclude Include="GloomListener.h" />
+    <ClInclude Include="PoissonBlurListener.h" />
+    <ClInclude Include="VignettingListener.h" />
+    <ClInclude Include="HellfireSkill.h" />
+    <ClInclude Include="FlameSkill.h" />
+    <ClInclude Include="RagefulBlowSkill.h" />
+    <ClInclude Include="InventoryRequestSellItemMessage.h" />
+    <ClInclude Include="InventoryRequestBuyItemMessage.h" />
+    <ClInclude Include="DeathStabSkill.h" />
+    <ClInclude Include="DestroyInventoryItemMessage.h" />
+    <ClInclude Include="GameGlobals.h" />
+    <ClInclude Include="StatsPanel.h" />
+    <ClInclude Include="TestCompositorListener.h" />
+    <ClInclude Include="GrayScaleListener.h" />
+    <ClInclude Include="InventoryCloseWindowMessage.h" />
+    <ClInclude Include="InventoryShowWindowMessage.h" />
+    <ClInclude Include="InventoryDropItemMessage.h" />
+    <ClInclude Include="BaseInventory.h" />
+    <ClInclude Include="InventoryMessageHandler.h" />
+    <ClInclude Include="NPC.h" />
+    <ClInclude Include="MovePanel.h" />
+    <ClInclude Include="NPCData.h" />
+    <ClInclude Include="PlayerData.h" />
+    <ClInclude Include="ShopPanel.h" />
+    <ClInclude Include="SkillFactory.h" />
+    <ClInclude Include="ShopInventory.h" />
+    <ClInclude Include="StashInventory.h" />
+    <ClInclude Include="StashPanel.h" />
+    <ClInclude Include="CycloneSkill.h" />
+    <ClInclude Include="TwistingSkill.h" />
+    <ClInclude Include="VisualEquipmentMessage.h" />
+    <ClInclude Include="InventoryResponseMoveMessage.h" />
+    <ClInclude Include="InventoryRequestMoveMessage.h" />
+    <ClInclude Include="CreateInventoryItemMessage.h" />
+    <ClInclude Include="ACDDestroyActorMessage.h" />
+    <ClInclude Include="InventoryItem.h" />
+    <ClInclude Include="InventoryPanel.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="TargetMessage.h" />
+    <ClInclude Include="ACDEnterMapMessage.h" />
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="AnimationBlender.h" />
+    <ClInclude Include="ArrayUtil.h" />
+    <ClInclude Include="BitConverterUtil.h" />
+    <ClInclude Include="ButtomBar.h" />
+    <ClInclude Include="CameraMan.h" />
+    <ClInclude Include="Chat.h" />
+    <ClInclude Include="DebugPanel.h" />
+    <ClInclude Include="DotSceneLoader.h" />
+    <ClInclude Include="EncodingUTF8.h" />
+    <ClInclude Include="Equipment.h" />
+    <ClInclude Include="Extension.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="GameBitBuffer.h" />
+    <ClInclude Include="ACDCreateActorMessage.h" />
+    <ClInclude Include="GameChangeSceneMessage.h" />
+    <ClInclude Include="GameClient.h" />
+    <ClInclude Include="GameGUI.h" />
+    <ClInclude Include="GameMessage.h" />
+    <ClInclude Include="GameSetupMessage.h" />
+    <ClInclude Include="ChatMessage.h" />
+    <ClInclude Include="GameTickMessage.h" />
+    <ClInclude Include="PlayerInventory.h" />
+    <ClInclude Include="ISkill.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemData.h" />
+    <ClInclude Include="LinearTrajectorie.h" />
+    <ClInclude Include="MenuPanel.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="MUEnums.h" />
+    <ClInclude Include="GameFramework.h" />
+    <ClInclude Include="LoginPanel.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="MuLogListener.h" />
+    <ClInclude Include="MuPath.h" />
+    <ClInclude Include="MuRenderQueueListener.h" />
+    <ClInclude Include="NewPlayerMessage.h" />
+    <ClInclude Include="PathFindingSystem\AnimateableCharacter.h" />
+    <ClInclude Include="PathFindingSystem\Character.h" />
+    <ClInclude Include="PathFindingSystem\ConvexShapeObstacle.h" />
+    <ClInclude Include="PathFindingSystem\CrowdManager.h" />
+    <ClInclude Include="PathFindingSystem\CylinderObstacle.h" />
+    <ClInclude Include="PathFindingSystem\Obstacle.h" />
+    <ClInclude Include="PathFindingSystem\OgreDetourCrowd.h" />
+    <ClInclude Include="PathFindingSystem\OgreDetourTileCache.h" />
+    <ClInclude Include="PathFindingSystem\OgreRecast.h" />
+    <ClInclude Include="PathFindingSystem\OgreRecastDefinitions.h" />
+    <ClInclude Include="PathFindingSystem\OgreRecastNavmeshPruner.h" />
+    <ClInclude Include="PathFindingSystem\RecastConvexHull.h" />
+    <ClInclude Include="PathFindingSystem\RecastInputGeom.h" />
+    <ClInclude Include="PathFindingSystem\SettingsFileParser.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="ProfilingPanel.h" />
+    <ClInclude Include="rapidxml.hpp" />
+    <ClInclude Include="rapidxml_iterators.hpp" />
+    <ClInclude Include="rapidxml_print.hpp" />
+    <ClInclude Include="rapidxml_utils.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Storage.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TickTimer.h" />
+    <ClInclude Include="NetAttributeKeyValue.h" />
+    <ClInclude Include="VisualItem.h" />
+    <ClInclude Include="WingComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MegaProjectNative.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

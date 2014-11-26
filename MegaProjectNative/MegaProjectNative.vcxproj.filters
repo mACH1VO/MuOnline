@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{6b811f64-f344-4400-a6fc-478cd80da0ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI">
+      <UniqueIdentifier>{d22949cc-0b50-4580-9999-a4da0250b271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Debug">
+      <UniqueIdentifier>{b89b58cf-9190-44ac-a6c9-777b1f93cf5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{3d78ff79-deb9-4de9-81c1-4bb8cb783cf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities\rapidxml">
+      <UniqueIdentifier>{ff78a5b2-8670-435a-be67-c24ec293eb8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Networking">
+      <UniqueIdentifier>{ba20a0cd-8cb5-4a49-ae3d-17dd8499698e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Networking\Messages">
+      <UniqueIdentifier>{495e5745-f22d-476e-bc5b-beeee86c1762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PathFindingSystem">
+      <UniqueIdentifier>{e9d46459-3fdc-4a29-afb0-a38b7c094e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Store">
+      <UniqueIdentifier>{02f231bb-d6c2-4aed-80d9-3ac236276e4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Listeners">
+      <UniqueIdentifier>{c14c0ba3-c2b5-4b8e-883b-8549c4e921db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bullet">
+      <UniqueIdentifier>{04ba180d-9fc6-4ee3-9d60-216f902f4b42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Inventory">
+      <UniqueIdentifier>{1de85e02-5b8c-4ad6-9ec7-9c0ff50d4994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Networking\Fields">
+      <UniqueIdentifier>{f9b8cefe-7bcb-41a9-af46-3c33eb66f287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Networking\Messages\Skill">
+      <UniqueIdentifier>{9e257dfc-d056-4276-ad34-cb771d43f52e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Networking\Messages\Inventory">
+      <UniqueIdentifier>{93038eb3-7636-4bea-9a93-2a1f896a9928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Networking\Messages\ACD">
+      <UniqueIdentifier>{eed9e472-3c52-448a-891b-85e1cb0ec177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\AttributeSystem">
+      <UniqueIdentifier>{db06af62-bd40-4761-b847-04dcc108ed00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\AttributeSystem\AAttributeInstances">
+      <UniqueIdentifier>{cda0f51b-993e-4335-a1b3-cb95c228419a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Skills">
+      <UniqueIdentifier>{052f1b8d-57d1-4474-8b4f-15f2e5428741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Skills\BK">
+      <UniqueIdentifier>{b5b12535-cc62-4dec-9478-6465e15d40be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Skills\DW">
+      <UniqueIdentifier>{b7c8ba95-361c-4b19-9ee7-cc9ae449a08a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\PlayerComponents">
+      <UniqueIdentifier>{30fc863d-b14d-4053-a2c1-e757e4e1975d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI\RenderBoxHelpers">
+      <UniqueIdentifier>{b56f85ac-0573-46ec-b749-e284c703d420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ParticleEffects">
+      <UniqueIdentifier>{50e392c4-f442-4ead-b090-063a5057965c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Networking\Messages\AuctionHouse">
+      <UniqueIdentifier>{20a72c25-ea57-4a97-87c0-adbc152abfb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Inventory\Implementation">
+      <UniqueIdentifier>{efc2e613-a804-4dff-a432-f9bf603372c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Compositor">
+      <UniqueIdentifier>{594d1a3f-e385-4101-8f83-b74c04535546}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MegaProjectNative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameFramework.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="MuLogListener.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginPanel.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="DotSceneLoader.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClient.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="GameGUI.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuPanel.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ProfilingPanel.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBitBuffer.cpp">
+      <Filter>Source Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayUtil.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="BitConverterUtil.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="TickTimer.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugPanel.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMessage.cpp">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSetupMessage.cpp">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTickMessage.cpp">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="GameChangeSceneMessage.cpp">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="EncodingUTF8.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="NewPlayerMessage.cpp">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\OgreDetourTileCache.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\OgreRecast.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\OgreRecastNavmeshPruner.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\RecastConvexHull.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\RecastInputGeom.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\SettingsFileParser.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\AnimateableCharacter.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\Character.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\ConvexShapeObstacle.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\CrowdManager.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\CylinderObstacle.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\Obstacle.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFindingSystem\OgreDetourCrowd.cpp">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Extension.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationBlender.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="MuPath.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearTrajectorie.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="MuRenderQueueListener.cpp">
+      <Filter>Source Files\Listeners</Filter>
+    </ClCompile>
+    <ClCompile Include="ISkill.cpp">
+      <Filter>Source Files\Game\Skills</Filter>
+    </ClCompile>
+    <ClCompile Include="Storage.cpp">
+      <Filter>Source Files\Store</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemData.cpp">
+      <Filter>Source Files\Store</Filter>
+    </ClCompile>
+    <ClCompile Include="Chat.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatMessage.cpp">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtomBar.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetMessage.cpp">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryItem.cpp">
+      <Filter>Source Files\Game\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseInventory.cpp">
+      <Filter>Source Files\Game\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryPanel.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Equipment.cpp">
+      <Filter>Source Files\Game\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualItem.cpp">
+      <Filter>Source Files\Networking\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerData.cpp">
+      <Filter>Source Files\Store</Filter>
+    </ClCompile>
+    <ClCompile Include="MovePanel.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="StashPanel.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryMessageHandler.cpp">
+      <Filter>Source Files\Game\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="GameGlobals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillFactory.cpp">
+      <Filter>Source Files\Game\Skills</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopPanel.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCData.cpp">
+      <Filter>Source Files\Store</Filter>
+    </ClCompile>
+    <ClCompile Include="GrayScaleListener.cpp">
+      <Filter>Source Files\Compositor</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCompositorListener.cpp">
+      <Filter>Source Files\Compositor</Filter>
+    </ClCompile>
+    <ClCompile Include="WingComponent.cpp">
+      <Filter>Source Files\Game\PlayerComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="StatsPanel.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GFXManager.cpp">
+      <Filter>Source Files\Compositor</Filter>
+    </ClCompile>
+    <ClCompile Include="VignettingListener.cpp">
+      <Filter>Source Files\Compositor</Filter>
+    </ClCompile>
+    <ClCompile Include="DeathStabSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="RagefulBlowSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="CycloneSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="TwistingSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="FallingSlashSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="FlameSkill.cpp">
+      <Filter>Source Files\Game\Skills\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="HellfireSkill.cpp">
+      <Filter>Source Files\Game\Skills\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="CometfallSkill.cpp">
+      <Filter>Source Files\Game\Skills\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="UppercutSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="LungeSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="SlashSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="DefenseSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="RaidSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="ImpaleSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="InnerSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="StrikeofDestructionSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="ComboSkill.cpp">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillListMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="AvailableSkillListMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryCloseWindowMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryDropItemMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryRequestBuyItemMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryRequestJewelUse.cpp">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryRequestMoveMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryRequestSellItemMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryResponseMoveMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryShowWindowMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="ACDClientTranslateMessage.cpp">
+      <Filter>Source Files\Networking\Messages\ACD</Filter>
+    </ClCompile>
+    <ClCompile Include="ACDCreateActorMessage.cpp">
+      <Filter>Source Files\Networking\Messages\ACD</Filter>
+    </ClCompile>
+    <ClCompile Include="ACDDestroyActorMessage.cpp">
+      <Filter>Source Files\Networking\Messages\ACD</Filter>
+    </ClCompile>
+    <ClCompile Include="ACDEnterMapMessage.cpp">
+      <Filter>Source Files\Networking\Messages\ACD</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateInventoryItemMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="DestroyInventoryItemMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualEquipmentMessage.cpp">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorCorrectionListener.cpp">
+      <Filter>Source Files\Compositor</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialUtil.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="AAttribute.cpp">
+      <Filter>Source Files\Game\AttributeSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GameAttributes.cpp">
+      <Filter>Source Files\Game\AttributeSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="NetAttributeKeyValue.cpp">
+      <Filter>Source Files\Networking\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributesSetValuesMessage.cpp">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="IAttributable.cpp">
+      <Filter>Source Files\Game\AttributeSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GameAttributeUtil.cpp">
+      <Filter>Source Files\Game\AttributeSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeI.cpp">
+      <Filter>Source Files\Game\AttributeSystem\AAttributeInstances</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeF.cpp">
+      <Filter>Source Files\Game\AttributeSystem\AAttributeInstances</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeB.cpp">
+      <Filter>Source Files\Game\AttributeSystem\AAttributeInstances</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformInventoryUtil.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="AssignStatMessage.cpp">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClCompile>
+    <ClCompile Include="HandSkill.cpp">
+      <Filter>Source Files\Game\Skills</Filter>
+    </ClCompile>
+    <ClCompile Include="GloomListener.cpp">
+      <Filter>Source Files\Compositor</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraMan.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterData.cpp">
+      <Filter>Source Files\Store</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectFactory.cpp">
+      <Filter>Source Files\ParticleEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationBlender2.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationBlendData.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="MapQueryHelper.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="GlowListener.cpp">
+      <Filter>Source Files\Compositor</Filter>
+    </ClCompile>
+    <ClCompile Include="AuctionHouse.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TooltipItem.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerInventory.cpp">
+      <Filter>Source Files\Game\Inventory\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopInventory.cpp">
+      <Filter>Source Files\Game\Inventory\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="StashInventory.cpp">
+      <Filter>Source Files\Game\Inventory\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="BlurListener.cpp">
+      <Filter>Source Files\Compositor</Filter>
+    </ClCompile>
+    <ClCompile Include="PoissonBlurListener.cpp">
+      <Filter>Source Files\Compositor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameFramework.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="MuLogListener.h">
+      <Filter>Source Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginPanel.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_iterators.hpp">
+      <Filter>Source Files\Utilities\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_print.hpp">
+      <Filter>Source Files\Utilities\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_utils.hpp">
+      <Filter>Source Files\Utilities\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml.hpp">
+      <Filter>Source Files\Utilities\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="DotSceneLoader.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="MUEnums.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClient.h">
+      <Filter>Source Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="GameGUI.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuPanel.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfilingPanel.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBitBuffer.h">
+      <Filter>Source Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayUtil.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="BitConverterUtil.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="TickTimer.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugPanel.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMessage.h">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSetupMessage.h">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTickMessage.h">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="GameChangeSceneMessage.h">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="EncodingUTF8.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="NewPlayerMessage.h">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\OgreDetourCrowd.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\OgreDetourTileCache.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\OgreRecast.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\OgreRecastDefinitions.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\OgreRecastNavmeshPruner.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\RecastConvexHull.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\RecastInputGeom.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\SettingsFileParser.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\AnimateableCharacter.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\Character.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\ConvexShapeObstacle.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\CrowdManager.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\CylinderObstacle.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFindingSystem\Obstacle.h">
+      <Filter>Source Files\PathFindingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Extension.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationBlender.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="MuPath.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearTrajectorie.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="MuRenderQueueListener.h">
+      <Filter>Source Files\Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="ISkill.h">
+      <Filter>Source Files\Game\Skills</Filter>
+    </ClInclude>
+    <ClInclude Include="Storage.h">
+      <Filter>Source Files\Store</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemData.h">
+      <Filter>Source Files\Store</Filter>
+    </ClInclude>
+    <ClInclude Include="Chat.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatMessage.h">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtomBar.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetMessage.h">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryItem.h">
+      <Filter>Source Files\Game\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="BaseInventory.h">
+      <Filter>Source Files\Game\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryPanel.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Equipment.h">
+      <Filter>Source Files\Game\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualItem.h">
+      <Filter>Source Files\Networking\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerData.h">
+      <Filter>Source Files\Store</Filter>
+    </ClInclude>
+    <ClInclude Include="MovePanel.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="StashPanel.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryMessageHandler.h">
+      <Filter>Source Files\Game\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="GameGlobals.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillFactory.h">
+      <Filter>Source Files\Game\Skills</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopPanel.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCData.h">
+      <Filter>Source Files\Store</Filter>
+    </ClInclude>
+    <ClInclude Include="GrayScaleListener.h">
+      <Filter>Source Files\Compositor</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCompositorListener.h">
+      <Filter>Source Files\Compositor</Filter>
+    </ClInclude>
+    <ClInclude Include="WingComponent.h">
+      <Filter>Source Files\Game\PlayerComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="StatsPanel.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GFXManager.h">
+      <Filter>Source Files\Compositor</Filter>
+    </ClInclude>
+    <ClInclude Include="VignettingListener.h">
+      <Filter>Source Files\Compositor</Filter>
+    </ClInclude>
+    <ClInclude Include="DeathStabSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="RagefulBlowSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="CycloneSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="TwistingSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="FallingSlashSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="HellfireSkill.h">
+      <Filter>Source Files\Game\Skills\DW</Filter>
+    </ClInclude>
+    <ClInclude Include="FlameSkill.h">
+      <Filter>Source Files\Game\Skills\DW</Filter>
+    </ClInclude>
+    <ClInclude Include="CometfallSkill.h">
+      <Filter>Source Files\Game\Skills\DW</Filter>
+    </ClInclude>
+    <ClInclude Include="UppercutSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="LungeSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="SlashSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="DefenseSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="RaidSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="ImpaleSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="InnerSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="StrikeofDestructionSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="ComboSkill.h">
+      <Filter>Source Files\Game\Skills\BK</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillListMessage.h">
+      <Filter>Source Files\Networking\Messages\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="AvailableSkillListMessage.h">
+      <Filter>Source Files\Networking\Messages\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryShowWindowMessage.h">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryCloseWindowMessage.h">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryDropItemMessage.h">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryRequestBuyItemMessage.h">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryRequestJewelUse.h">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryRequestMoveMessage.h">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryRequestSellItemMessage.h">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="InventoryResponseMoveMessage.h">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="ACDEnterMapMessage.h">
+      <Filter>Source Files\Networking\Messages\ACD</Filter>
+    </ClInclude>
+    <ClInclude Include="ACDClientTranslateMessage.h">
+      <Filter>Source Files\Networking\Messages\ACD</Filter>
+    </ClInclude>
+    <ClInclude Include="ACDCreateActorMessage.h">
+      <Filter>Source Files\Networking\Messages\ACD</Filter>
+    </ClInclude>
+    <ClInclude Include="ACDDestroyActorMessage.h">
+      <Filter>Source Files\Networking\Messages\ACD</Filter>
+    </ClInclude>
+    <ClInclude Include="DestroyInventoryItemMessage.h">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateInventoryItemMessage.h">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualEquipmentMessage.h">
+      <Filter>Source Files\Networking\Messages\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorCorrectionListener.h">
+      <Filter>Source Files\Compositor</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialUtil.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="AAttribute.h">
+      <Filter>Source Files\Game\AttributeSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeValue.h">
+      <Filter>Source Files\Game\AttributeSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAttributes.h">
+      <Filter>Source Files\Game\AttributeSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="NetAttributeKeyValue.h">
+      <Filter>Source Files\Networking\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributesSetValuesMessage.h">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="IAttributable.h">
+      <Filter>Source Files\Game\AttributeSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAttributeUtil.h">
+      <Filter>Source Files\Game\AttributeSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeI.h">
+      <Filter>Source Files\Game\AttributeSystem\AAttributeInstances</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeF.h">
+      <Filter>Source Files\Game\AttributeSystem\AAttributeInstances</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeB.h">
+      <Filter>Source Files\Game\AttributeSystem\AAttributeInstances</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderBox.h">
+      <Filter>Source Files\GUI\RenderBoxHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderBoxScene.h">
+      <Filter>Source Files\GUI\RenderBoxHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformInventoryUtil.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="AssignStatMessage.h">
+      <Filter>Source Files\Networking\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="HandSkill.h">
+      <Filter>Source Files\Game\Skills</Filter>
+    </ClInclude>
+    <ClInclude Include="GloomListener.h">
+      <Filter>Source Files\Compositor</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraMan.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterData.h">
+      <Filter>Source Files\Store</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectFactory.h">
+      <Filter>Source Files\ParticleEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationBlender2.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationBlendData.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="MapQueryHelper.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="GlowListener.h">
+      <Filter>Source Files\Compositor</Filter>
+    </ClInclude>
+    <ClInclude Include="AuctionHouse.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TooltipItem.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="StashInventory.h">
+      <Filter>Source Files\Game\Inventory\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInventory.h">
+      <Filter>Source Files\Game\Inventory\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopInventory.h">
+      <Filter>Source Files\Game\Inventory\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="BlurListener.h">
+      <Filter>Source Files\Compositor</Filter>
+    </ClInclude>
+    <ClInclude Include="PoissonBlurListener.h">
+      <Filter>Source Files\Compositor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MegaProjectNative.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

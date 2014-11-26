@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{996EA532-09E5-4BF8-A5E0-72D10802CCC4}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>OgreRTShaderSystem</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MU\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OgreRTShaderSystem.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OgreRTShaderSystem_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MU\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OgreRTShaderSystem.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OgreRTShaderSystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MU\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">OgreRTShaderSystem.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">OgreRTShaderSystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MU\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">OgreRTShaderSystem.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">OgreRTShaderSystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;CMAKE_INTDIR="Debug";OgreRTShaderSystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;CMAKE_INTDIR=\"Debug\";OgreRTShaderSystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\OgreMain_d.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-gd-1_56.lib;E:\MU\Dependencies\lib\Debug\FreeImageLib.lib;E:\MU\Dependencies\lib\Debug\zziplibd.lib;E:\MU\Dependencies\lib\Debug\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/Debug/OgreRTShaderSystem_d.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/Debug/OgreRTShaderSystem_d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;CMAKE_INTDIR="Release";OgreRTShaderSystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;CMAKE_INTDIR=\"Release\";OgreRTShaderSystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\OgreMain.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/Release/OgreRTShaderSystem.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/Release/OgreRTShaderSystem.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;CMAKE_INTDIR="MinSizeRel";OgreRTShaderSystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;CMAKE_INTDIR=\"MinSizeRel\";OgreRTShaderSystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\MinSizeRel\OgreMain.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/MinSizeRel/OgreRTShaderSystem.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/MinSizeRel/OgreRTShaderSystem.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;CMAKE_INTDIR="RelWithDebInfo";OgreRTShaderSystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";OgreRTShaderSystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\Components\RTShaderSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\RelWithDebInfo\OgreMain.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/RelWithDebInfo/OgreRTShaderSystem.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/RelWithDebInfo/OgreRTShaderSystem.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/MU/OgreMain/OgreMain.vcxproj">
+      <Project>06B0857D-46D1-4FBD-B252-03FD1C057906</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\OgreRTShaderSystem.h" />
+    <ClInclude Include="include\OgreShaderCGProgramProcessor.h" />
+    <ClInclude Include="include\OgreShaderCGProgramWriter.h" />
+    <ClInclude Include="include\OgreShaderExDualQuaternionSkinning.h" />
+    <ClInclude Include="include\OgreShaderExHardwareSkinning.h" />
+    <ClInclude Include="include\OgreShaderExHardwareSkinningTechnique.h" />
+    <ClInclude Include="include\OgreShaderExIntegratedPSSM3.h" />
+    <ClInclude Include="include\OgreShaderExLayeredBlending.h" />
+    <ClInclude Include="include\OgreShaderExLinearSkinning.h" />
+    <ClInclude Include="include\OgreShaderExNormalMapLighting.h" />
+    <ClInclude Include="include\OgreShaderExPerPixelLighting.h" />
+    <ClInclude Include="include\OgreShaderExTextureAtlasSampler.h" />
+    <ClInclude Include="include\OgreShaderExTriplanarTexturing.h" />
+    <ClInclude Include="include\OgreShaderFFPAlphaTest.h" />
+    <ClInclude Include="include\OgreShaderFFPColour.h" />
+    <ClInclude Include="include\OgreShaderFFPFog.h" />
+    <ClInclude Include="include\OgreShaderFFPLighting.h" />
+    <ClInclude Include="include\OgreShaderFFPRenderState.h" />
+    <ClInclude Include="include\OgreShaderFFPRenderStateBuilder.h" />
+    <ClInclude Include="include\OgreShaderFFPTexturing.h" />
+    <ClInclude Include="include\OgreShaderFFPTransform.h" />
+    <ClInclude Include="include\OgreShaderFunction.h" />
+    <ClInclude Include="include\OgreShaderFunctionAtom.h" />
+    <ClInclude Include="include\OgreShaderGenerator.h" />
+    <ClInclude Include="include\OgreShaderGLSLESProgramProcessor.h" />
+    <ClInclude Include="include\OgreShaderGLSLESProgramWriter.h" />
+    <ClInclude Include="include\OgreShaderGLSLProgramProcessor.h" />
+    <ClInclude Include="include\OgreShaderGLSLProgramWriter.h" />
+    <ClInclude Include="include\OgreShaderHLSLProgramProcessor.h" />
+    <ClInclude Include="include\OgreShaderHLSLProgramWriter.h" />
+    <ClInclude Include="include\OgreShaderMaterialSerializerListener.h" />
+    <ClInclude Include="include\OgreShaderParameter.h" />
+    <ClInclude Include="include\OgreShaderPrerequisites.h" />
+    <ClInclude Include="include\OgreShaderProgram.h" />
+    <ClInclude Include="include\OgreShaderProgramManager.h" />
+    <ClInclude Include="include\OgreShaderProgramProcessor.h" />
+    <ClInclude Include="include\OgreShaderProgramSet.h" />
+    <ClInclude Include="include\OgreShaderProgramWriter.h" />
+    <ClInclude Include="include\OgreShaderProgramWriterManager.h" />
+    <ClInclude Include="include\OgreShaderRenderState.h" />
+    <ClInclude Include="include\OgreShaderScriptTranslator.h" />
+    <ClInclude Include="include\OgreShaderSubRenderState.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\OgreShaderCGProgramProcessor.cpp" />
+    <ClCompile Include="src\OgreShaderCGProgramWriter.cpp" />
+    <ClCompile Include="src\OgreShaderExDualQuaternionSkinning.cpp" />
+    <ClCompile Include="src\OgreShaderExHardwareSkinning.cpp" />
+    <ClCompile Include="src\OgreShaderExHardwareSkinningTechnique.cpp" />
+    <ClCompile Include="src\OgreShaderExIntegratedPSSM3.cpp" />
+    <ClCompile Include="src\OgreShaderExLayeredBlending.cpp" />
+    <ClCompile Include="src\OgreShaderExLinearSkinning.cpp" />
+    <ClCompile Include="src\OgreShaderExNormalMapLighting.cpp" />
+    <ClCompile Include="src\OgreShaderExPerPixelLighting.cpp" />
+    <ClCompile Include="src\OgreShaderExTextureAtlasSampler.cpp" />
+    <ClCompile Include="src\OgreShaderExTriplanarTexturing.cpp" />
+    <ClCompile Include="src\OgreShaderFFPAlphaTest.cpp" />
+    <ClCompile Include="src\OgreShaderFFPColour.cpp" />
+    <ClCompile Include="src\OgreShaderFFPFog.cpp" />
+    <ClCompile Include="src\OgreShaderFFPLighting.cpp" />
+    <ClCompile Include="src\OgreShaderFFPRenderStateBuilder.cpp" />
+    <ClCompile Include="src\OgreShaderFFPTexturing.cpp" />
+    <ClCompile Include="src\OgreShaderFFPTransform.cpp" />
+    <ClCompile Include="src\OgreShaderFunction.cpp" />
+    <ClCompile Include="src\OgreShaderFunctionAtom.cpp" />
+    <ClCompile Include="src\OgreShaderGenerator.cpp" />
+    <ClCompile Include="src\OgreShaderGLSLESProgramProcessor.cpp" />
+    <ClCompile Include="src\OgreShaderGLSLESProgramWriter.cpp" />
+    <ClCompile Include="src\OgreShaderGLSLProgramProcessor.cpp" />
+    <ClCompile Include="src\OgreShaderGLSLProgramWriter.cpp" />
+    <ClCompile Include="src\OgreShaderHLSLProgramProcessor.cpp" />
+    <ClCompile Include="src\OgreShaderHLSLProgramWriter.cpp" />
+    <ClCompile Include="src\OgreShaderMaterialSerializerListener.cpp" />
+    <ClCompile Include="src\OgreShaderParameter.cpp" />
+    <ClCompile Include="src\OgreShaderProgram.cpp" />
+    <ClCompile Include="src\OgreShaderProgramManager.cpp" />
+    <ClCompile Include="src\OgreShaderProgramProcessor.cpp" />
+    <ClCompile Include="src\OgreShaderProgramSet.cpp" />
+    <ClCompile Include="src\OgreShaderProgramWriter.cpp" />
+    <ClCompile Include="src\OgreShaderProgramWriterManager.cpp" />
+    <ClCompile Include="src\OgreShaderRenderState.cpp" />
+    <ClCompile Include="src\OgreShaderScriptTranslator.cpp" />
+    <ClCompile Include="src\OgreShaderSubRenderState.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

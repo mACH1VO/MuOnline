@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{FBD3C983-741C-4994-8324-C9CA8FA0BBE6}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>Plugin_PCZSceneManager</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MU\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Plugin_PCZSceneManager.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Plugin_PCZSceneManager_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MU\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Plugin_PCZSceneManager.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Plugin_PCZSceneManager</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MU\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Plugin_PCZSceneManager.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Plugin_PCZSceneManager</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MU\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Plugin_PCZSceneManager.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Plugin_PCZSceneManager</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEBUG;OGRE_PCZPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR="Debug";Plugin_PCZSceneManager_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEBUG;OGRE_PCZPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"Debug\";Plugin_PCZSceneManager_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\OgreMain_d.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-gd-1_56.lib;E:\MU\Dependencies\lib\Debug\FreeImageLib.lib;E:\MU\Dependencies\lib\Debug\zziplibd.lib;E:\MU\Dependencies\lib\Debug\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/Debug/Plugin_PCZSceneManager_d.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/Debug/Plugin_PCZSceneManager_d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRE_PCZPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR="Release";Plugin_PCZSceneManager_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRE_PCZPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"Release\";Plugin_PCZSceneManager_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\OgreMain.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/Release/Plugin_PCZSceneManager.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/Release/Plugin_PCZSceneManager.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRE_PCZPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR="MinSizeRel";Plugin_PCZSceneManager_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRE_PCZPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"MinSizeRel\";Plugin_PCZSceneManager_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\MinSizeRel\OgreMain.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/MinSizeRel/Plugin_PCZSceneManager.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/MinSizeRel/Plugin_PCZSceneManager.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRE_PCZPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR="RelWithDebInfo";Plugin_PCZSceneManager_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRE_PCZPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"RelWithDebInfo\";Plugin_PCZSceneManager_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\PCZSceneManager\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\RelWithDebInfo\OgreMain.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/RelWithDebInfo/Plugin_PCZSceneManager.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/RelWithDebInfo/Plugin_PCZSceneManager.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/MU/OgreMain/OgreMain.vcxproj">
+      <Project>06B0857D-46D1-4FBD-B252-03FD1C057906</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\OgreAntiPortal.h" />
+    <ClInclude Include="include\OgreCapsule.h" />
+    <ClInclude Include="include\OgreDefaultZone.h" />
+    <ClInclude Include="include\OgrePCPlane.h" />
+    <ClInclude Include="include\OgrePCZCamera.h" />
+    <ClInclude Include="include\OgrePCZFrustum.h" />
+    <ClInclude Include="include\OgrePCZLight.h" />
+    <ClInclude Include="include\OgrePCZone.h" />
+    <ClInclude Include="include\OgrePCZoneFactory.h" />
+    <ClInclude Include="include\OgrePCZPlugin.h" />
+    <ClInclude Include="include\OgrePCZPrerequisites.h" />
+    <ClInclude Include="include\OgrePCZSceneManager.h" />
+    <ClInclude Include="include\OgrePCZSceneNode.h" />
+    <ClInclude Include="include\OgrePCZSceneQuery.h" />
+    <ClInclude Include="include\OgrePortal.h" />
+    <ClInclude Include="include\OgrePortalBase.h" />
+    <ClInclude Include="include\OgreSegment.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\OgreAntiPortal.cpp" />
+    <ClCompile Include="src\OgreCapsule.cpp" />
+    <ClCompile Include="src\OgreDefaultZone.cpp" />
+    <ClCompile Include="src\OgrePCPlane.cpp" />
+    <ClCompile Include="src\OgrePCZCamera.cpp" />
+    <ClCompile Include="src\OgrePCZFrustum.cpp" />
+    <ClCompile Include="src\OgrePCZLight.cpp" />
+    <ClCompile Include="src\OgrePCZone.cpp" />
+    <ClCompile Include="src\OgrePCZoneFactory.cpp" />
+    <ClCompile Include="src\OgrePCZPlugin.cpp" />
+    <ClCompile Include="src\OgrePCZSceneManager.cpp" />
+    <ClCompile Include="src\OgrePCZSceneManagerDll.cpp" />
+    <ClCompile Include="src\OgrePCZSceneNode.cpp" />
+    <ClCompile Include="src\OgrePCZSceneQuery.cpp" />
+    <ClCompile Include="src\OgrePortal.cpp" />
+    <ClCompile Include="src\OgrePortalBase.cpp" />
+    <ClCompile Include="src\OgreSegment.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

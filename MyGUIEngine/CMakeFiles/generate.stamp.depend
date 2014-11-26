@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+E:/SourceTree/mygui/MyGUIEngine/CMakeLists.txt
+E:/SourceTree/mygui/CMake/Utils/PrecompiledHeader.cmake
+E:/SourceTree/mygui/MyGUIEngine/MyGUIEngine.list
+E:/SourceTree/mygui/CMake/Templates/VisualStudio2010UserFile.vcxproj.user.in

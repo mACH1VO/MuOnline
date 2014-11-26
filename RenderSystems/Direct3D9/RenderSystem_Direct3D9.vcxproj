@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B5E6FD6F-FFAD-4293-8B8A-AD4D590329D2}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>RenderSystem_Direct3D9</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MU\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RenderSystem_Direct3D9.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RenderSystem_Direct3D9_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MU\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RenderSystem_Direct3D9.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RenderSystem_Direct3D9</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MU\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">RenderSystem_Direct3D9.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">RenderSystem_Direct3D9</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MU\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RenderSystem_Direct3D9.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RenderSystem_Direct3D9</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEBUG;OGRED3DENGINEDLL_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR="Debug";RenderSystem_Direct3D9_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEBUG;OGRED3DENGINEDLL_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"Debug\";RenderSystem_Direct3D9_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\OgreMain_d.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3d9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\DxErr.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\dxguid.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-gd-1_56.lib;E:\MU\Dependencies\lib\Debug\FreeImageLib.lib;E:\MU\Dependencies\lib\Debug\zziplibd.lib;E:\MU\Dependencies\lib\Debug\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/Debug/RenderSystem_Direct3D9_d.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/Debug/RenderSystem_Direct3D9_d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRED3DENGINEDLL_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR="Release";RenderSystem_Direct3D9_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRED3DENGINEDLL_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"Release\";RenderSystem_Direct3D9_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\OgreMain.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3d9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\DxErr.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\dxguid.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/Release/RenderSystem_Direct3D9.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/Release/RenderSystem_Direct3D9.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRED3DENGINEDLL_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR="MinSizeRel";RenderSystem_Direct3D9_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRED3DENGINEDLL_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"MinSizeRel\";RenderSystem_Direct3D9_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\MinSizeRel\OgreMain.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3d9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\DxErr.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\dxguid.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/MinSizeRel/RenderSystem_Direct3D9.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/MinSizeRel/RenderSystem_Direct3D9.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRED3DENGINEDLL_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR="RelWithDebInfo";RenderSystem_Direct3D9_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRED3DENGINEDLL_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"RelWithDebInfo\";RenderSystem_Direct3D9_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\RenderSystems\Direct3D9\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\RelWithDebInfo\OgreMain.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3d9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\d3dx9.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\DxErr.lib;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86\dxguid.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>E:/MU/lib/RelWithDebInfo/RenderSystem_Direct3D9.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/MU/bin/RelWithDebInfo/RenderSystem_Direct3D9.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/MU/OgreMain/OgreMain.vcxproj">
+      <Project>06B0857D-46D1-4FBD-B252-03FD1C057906</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\OgreD3D9DepthBuffer.h" />
+    <ClInclude Include="include\OgreD3D9Device.h" />
+    <ClInclude Include="include\OgreD3D9DeviceManager.h" />
+    <ClInclude Include="include\OgreD3D9Driver.h" />
+    <ClInclude Include="include\OgreD3D9DriverList.h" />
+    <ClInclude Include="include\OgreD3D9GpuProgram.h" />
+    <ClInclude Include="include\OgreD3D9GpuProgramManager.h" />
+    <ClInclude Include="include\OgreD3D9HardwareBufferManager.h" />
+    <ClInclude Include="include\OgreD3D9HardwareIndexBuffer.h" />
+    <ClInclude Include="include\OgreD3D9HardwareOcclusionQuery.h" />
+    <ClInclude Include="include\OgreD3D9HardwarePixelBuffer.h" />
+    <ClInclude Include="include\OgreD3D9HardwareVertexBuffer.h" />
+    <ClInclude Include="include\OgreD3D9HLSLProgram.h" />
+    <ClInclude Include="include\OgreD3D9HLSLProgramFactory.h" />
+    <ClInclude Include="include\OgreD3D9Mappings.h" />
+    <ClInclude Include="include\OgreD3D9MultiRenderTarget.h" />
+    <ClInclude Include="include\OgreD3D9Plugin.h" />
+    <ClInclude Include="include\OgreD3D9Prerequisites.h" />
+    <ClInclude Include="include\OgreD3D9RenderSystem.h" />
+    <ClInclude Include="include\OgreD3D9RenderWindow.h" />
+    <ClInclude Include="include\OgreD3D9Resource.h" />
+    <ClInclude Include="include\OgreD3D9ResourceManager.h" />
+    <ClInclude Include="include\OgreD3D9StereoDriverAMD.h" />
+    <ClInclude Include="include\OgreD3D9StereoDriverBridge.h" />
+    <ClInclude Include="include\OgreD3D9StereoDriverImpl.h" />
+    <ClInclude Include="include\OgreD3D9StereoDriverNVIDIA.h" />
+    <ClInclude Include="include\OgreD3D9Texture.h" />
+    <ClInclude Include="include\OgreD3D9TextureManager.h" />
+    <ClInclude Include="include\OgreD3D9VertexDeclaration.h" />
+    <ClInclude Include="include\OgreD3D9VideoMode.h" />
+    <ClInclude Include="include\OgreD3D9VideoModeList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\OgreD3D9DepthBuffer.cpp" />
+    <ClCompile Include="src\OgreD3D9Device.cpp" />
+    <ClCompile Include="src\OgreD3D9DeviceManager.cpp" />
+    <ClCompile Include="src\OgreD3D9Driver.cpp" />
+    <ClCompile Include="src\OgreD3D9DriverList.cpp" />
+    <ClCompile Include="src\OgreD3D9EngineDll.cpp" />
+    <ClCompile Include="src\OgreD3D9GpuProgram.cpp" />
+    <ClCompile Include="src\OgreD3D9GpuProgramManager.cpp" />
+    <ClCompile Include="src\OgreD3D9HardwareBufferManager.cpp" />
+    <ClCompile Include="src\OgreD3D9HardwareIndexBuffer.cpp" />
+    <ClCompile Include="src\OgreD3D9HardwareOcclusionQuery.cpp" />
+    <ClCompile Include="src\OgreD3D9HardwarePixelBuffer.cpp" />
+    <ClCompile Include="src\OgreD3D9HardwareVertexBuffer.cpp" />
+    <ClCompile Include="src\OgreD3D9HLSLProgram.cpp" />
+    <ClCompile Include="src\OgreD3D9HLSLProgramFactory.cpp" />
+    <ClCompile Include="src\OgreD3D9Mappings.cpp" />
+    <ClCompile Include="src\OgreD3D9MultiRenderTarget.cpp" />
+    <ClCompile Include="src\OgreD3D9Plugin.cpp" />
+    <ClCompile Include="src\OgreD3D9RenderSystem.cpp" />
+    <ClCompile Include="src\OgreD3D9RenderWindow.cpp" />
+    <ClCompile Include="src\OgreD3D9Resource.cpp" />
+    <ClCompile Include="src\OgreD3D9ResourceManager.cpp" />
+    <ClCompile Include="src\OgreD3D9StereoDriverAMD.cpp" />
+    <ClCompile Include="src\OgreD3D9StereoDriverBridge.cpp" />
+    <ClCompile Include="src\OgreD3D9StereoDriverNVIDIA.cpp" />
+    <ClCompile Include="src\OgreD3D9Texture.cpp" />
+    <ClCompile Include="src\OgreD3D9TextureManager.cpp" />
+    <ClCompile Include="src\OgreD3D9VertexDeclaration.cpp" />
+    <ClCompile Include="src\OgreD3D9VideoMode.cpp" />
+    <ClCompile Include="src\OgreD3D9VideoModeList.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

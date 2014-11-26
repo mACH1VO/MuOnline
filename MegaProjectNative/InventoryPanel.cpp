@@ -1,0 +1,478 @@
+#include "stdafx.h"
+#include "InventoryPanel.h"
+#include "Item.h"
+#include "MUEnums.h"
+#include "GameFramework.h"
+#include "GameClient.h"
+#include "GameMessage.h"
+#include "InventoryCloseWindowMessage.h"
+//#include "ItemInventory.h"
+
+using namespace Ogre;
+
+	InventoryPanel::InventoryPanel(MyGUI::Widget* _parent)
+	{
+		initialiseByAttributes(this, _parent);
+		/*MyGUI::Widget * wg_parent = this->mMainWidget->getParent();
+		this->slot_list = new std::vector<MyGUI::Widget*>();
+
+		int child_count = this->mslot_container_panel_2_Widget->getChildCount();
+
+		for (int i = 0; i < child_count; i++)
+		{
+			MyGUI::Widget* widget_slot = this->mslot_container_panel_2_Widget->getChildAt(i);
+			this->slot_list->push_back(widget_slot);
+		}*/
+
+		//this->conta
+		//ItemInventory* _itemInventory = MyGUI::Gui::getInstancePtr()->createWidget<ItemInventory>("item_cap", MyGUI::IntCoord(10,10,64,64), MyGUI::Align::Default, "Main", "item_name");
+		//_itemInventory->setColour(MyGUI::Colour::Green);
+
+		/*MyGUI::IntRect rectangle = this->minventory_slot_7x4Widget->getAbsoluteRect();
+		bool test_check_point = this->minventory_slot_7x4Widget->_checkPoint(970, 670);
+		bool test_check_point2 = this->minventory_slot_7x4Widget->_checkPoint(18, 12);
+
+		int l = this->minventory_slot_7x4Widget->_getViewLeft();
+		int t = this->minventory_slot_7x4Widget->getTop();
+		int r = this->minventory_slot_7x4Widget->_getViewRight();
+		int b = this->minventory_slot_7x4Widget->_getViewBottom();*/
+
+		/*MyGUI::IntPoint pos = this->minventory_slot_7x4Widget->getAbsolutePosition();
+		pos.left = 970;
+		pos.top = 670;
+		string jaja = rectangle.print();
+		bool inside = rectangle.inside(pos);*/
+		//MyGUI::types::TPoint tt = MyGUI::types::TPoint<970,670>;
+		//rectangle.inside(MyGUI::types::TPoint<970,670>);
+		//string tn = canvas->getTextureName();
+		//string ctn = canvas->getClassTypeName();
+		//canvas->
+		//int taa = 5;
+		this->mclose_button_Button->eventMouseButtonClick += MyGUI::newDelegate(this, &InventoryPanel::mclose_eventMouseButtonClick);
+	}
+
+	InventoryPanel::~InventoryPanel()
+	{
+	}
+
+	void InventoryPanel::mclose_eventMouseButtonClick(MyGUI::WidgetPtr _sender)
+	{
+		Messages::InventoryCloseWindowMessage* msg = new Messages::InventoryCloseWindowMessage();
+		msg->windowId = InventoryWindowsID::_PlayerInventory;
+		GameFramework::getSingletonPtr()->getGameClient()->sendMessage(msg);
+		delete msg;
+	}
+	MyGUI::Widget* InventoryPanel::getWidgetSlotByRC(int r, int c)
+	{
+		std::string str = "inventory_slot_";
+		str = str + Ogre::StringConverter::toString(r) + "x" + Ogre::StringConverter::toString(c);
+
+		std::string basee = string(this->mMainWidget->getName().begin(), this->mMainWidget->getName().begin() + 9);
+
+		str = basee + str;
+
+		MyGUI::Widget* ret = this->mslot_container_panel_2_Widget->findWidget(str);
+
+		return ret;
+	}
+
+	MyGUI::Widget* InventoryPanel::getWidgetSlotByScreenPosition(const MyGUI::types::TPoint<int>&  _value)
+	{
+		int slot_count = this->mslot_container_panel_2_Widget->getChildCount();
+		for (int i = 0; i < slot_count; i++)
+		{
+			MyGUI::Widget* widget = this->mslot_container_panel_2_Widget->getChildAt(i);
+			if (widget->getAbsoluteRect().inside(_value))
+			{
+				MyGUI::types::TRect<int> big_rect = widget->getAbsoluteRect();
+				return widget;
+			}
+		}
+		return 0;
+	}
+
+	void InventoryPanel::setAllEquipmentColour(MyGUI::Colour color)
+	{
+		mitem_wing_Widget->setColour(color);
+		mitem_fairy_Widget->setColour(color);
+		mitem_cap_Widget->setColour(color);
+		mitem_necklace_Widget->setColour(color);
+		mitem_weapon_l_Widget->setColour(color);
+		mitem_upper_Widget->setColour(color);
+		mitem_weapon_r_Widget->setColour(color);
+		mitem_ring_l_Widget->setColour(color);
+		mitem_lower_Widget->setColour(color);
+		mitem_ring_r_Widget->setColour(color);
+		mitem_gloves_Widget->setColour(color);
+		mitem_boots_Widget->setColour(color);
+	}
+
+	EquipmentSlotId InventoryPanel::getEquipmentIdByWidgetName(std::string name)
+	{
+		if (name == this->mitem_cap_Widget->getName())
+		{
+			return EquipmentSlotId::Helm;
+		}
+
+		if (name == this->mitem_fairy_Widget->getName())
+		{
+			return EquipmentSlotId::Fairy;
+		}
+
+		if (name == this->mitem_gloves_Widget->getName())
+		{
+			return EquipmentSlotId::Gloves;
+		}
+
+		if (name == this->mitem_lower_Widget->getName())
+		{
+			return EquipmentSlotId::Pants;
+		}
+
+		if (name == this->mitem_boots_Widget->getName())
+		{
+			return EquipmentSlotId::Boots;
+		}
+
+		if (name == this->mitem_necklace_Widget->getName())
+		{
+			return EquipmentSlotId::Necklace;
+		}
+
+		if (name == this->mitem_ring_l_Widget->getName())
+		{
+			return EquipmentSlotId::Ring_left;
+		}
+
+		if (name == this->mitem_ring_r_Widget->getName())
+		{
+			return EquipmentSlotId::Ring_right;
+		}
+
+		if (name == this->mitem_upper_Widget->getName())
+		{
+			return EquipmentSlotId::Armor;
+		}
+
+		if (name == this->mitem_weapon_l_Widget->getName())
+		{
+			return EquipmentSlotId::Weapon_L;
+		}
+
+		if (name == this->mitem_weapon_r_Widget->getName())
+		{
+			return EquipmentSlotId::Weapon_R;
+		}
+
+		if (name == this->mitem_wing_Widget->getName())
+		{
+			return EquipmentSlotId::Wing;
+		}
+
+		LogManager::getSingletonPtr()->logMessage(LogMessageLevel::LML_CRITICAL, "Error, could not find equipment id by name = " + name);
+		return EquipmentSlotId::_Inventory;
+	}
+
+	MyGUI::Widget* InventoryPanel::getWidgetByEquipmentId(EquipmentSlotId _equipmentSlot)
+	{
+		if (_equipmentSlot == EquipmentSlotId::Helm)
+			return this->mitem_cap_Widget;
+
+		if (_equipmentSlot == EquipmentSlotId::Fairy)
+			return this->mitem_fairy_Widget;
+
+		if (_equipmentSlot == EquipmentSlotId::Gloves)
+			return this->mitem_gloves_Widget;
+
+		if (_equipmentSlot == EquipmentSlotId::Pants)
+			return this->mitem_lower_Widget;
+
+		if (_equipmentSlot == EquipmentSlotId::Boots)
+			return this->mitem_boots_Widget;
+
+		if (_equipmentSlot == EquipmentSlotId::Necklace)
+			return this->mitem_necklace_Widget;
+
+		if (_equipmentSlot == EquipmentSlotId::Ring_left)
+			return this->mitem_ring_l_Widget;
+
+		if (_equipmentSlot == EquipmentSlotId::Ring_right)
+			return this->mitem_ring_r_Widget;
+
+		if (_equipmentSlot == EquipmentSlotId::Armor)
+			return this->mitem_upper_Widget;
+
+		if (_equipmentSlot == EquipmentSlotId::Weapon_L)
+			return this->mitem_weapon_l_Widget;
+
+		if (_equipmentSlot == EquipmentSlotId::Weapon_R)
+			return this->mitem_weapon_r_Widget;
+
+		if (_equipmentSlot == EquipmentSlotId::Wing)
+			return this->mitem_wing_Widget;
+
+		return 0;
+	}
+	MyGUI::Widget* InventoryPanel::getEquipmentWidgetByScreenPosition(const MyGUI::types::TPoint<int>&  _value)
+	{
+		if (this->mitem_wing_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_wing_Widget->getAbsoluteRect();
+			return this->mitem_wing_Widget;
+		}
+
+		if (this->mitem_fairy_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_fairy_Widget->getAbsoluteRect();
+			return this->mitem_fairy_Widget;
+		}
+
+		if (this->mitem_cap_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_cap_Widget->getAbsoluteRect();
+			return this->mitem_cap_Widget;
+		}
+
+		if (this->mitem_necklace_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_necklace_Widget->getAbsoluteRect();
+			return this->mitem_necklace_Widget;
+		}
+
+		if (this->mitem_weapon_l_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_weapon_l_Widget->getAbsoluteRect();
+			return this->mitem_weapon_l_Widget;
+		}
+
+		if (this->mitem_upper_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_upper_Widget->getAbsoluteRect();
+			return this->mitem_upper_Widget;
+		}
+
+		if (this->mitem_weapon_r_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_weapon_r_Widget->getAbsoluteRect();
+			return this->mitem_weapon_r_Widget;
+		}
+
+		if (this->mitem_ring_l_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_ring_l_Widget->getAbsoluteRect();
+			return this->mitem_ring_l_Widget;
+		}
+
+		if (this->mitem_lower_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_lower_Widget->getAbsoluteRect();
+			return this->mitem_lower_Widget;
+		}
+
+		if (this->mitem_ring_r_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_ring_r_Widget->getAbsoluteRect();
+			return this->mitem_ring_r_Widget;
+		}
+
+		if (this->mitem_gloves_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_gloves_Widget->getAbsoluteRect();
+			return this->mitem_gloves_Widget;
+		}
+
+		if (this->mitem_boots_Widget->getAbsoluteRect().inside(_value))
+		{
+			MyGUI::types::TRect<int> big_rect = this->mitem_boots_Widget->getAbsoluteRect();
+			return this->mitem_boots_Widget;
+		}
+
+		return 0;
+	}
+
+	MyGUI::Widget* InventoryPanel::getWidgetSlotByScreenPosition_modified(const MyGUI::types::TPoint<int>&  _value)
+	{
+		int slot_count = this->mslot_container_panel_2_Widget->getChildCount();
+		for (int i = 0; i < slot_count; i++)
+		{
+			MyGUI::Widget* widget = this->mslot_container_panel_2_Widget->getChildAt(i);
+			if (widget->getAbsoluteRect().inside(_value))
+			{
+				MyGUI::types::TRect<int> big_rect = widget->getAbsoluteRect();
+				MyGUI::types::TSize<int> big_size = widget->getSize();
+
+				/********/
+				/* 1  2 */
+				/* 3  4 */
+				/********/
+
+				MyGUI::types::TRect<int> rect_1;
+				rect_1.set(big_rect.left, big_rect.top, big_rect.left + big_size.width / 2, big_rect.top + big_size.height / 2);
+
+				MyGUI::types::TRect<int> rect_2;
+				rect_2.set(big_rect.left + big_size.width / 2, big_rect.top, big_rect.left + big_size.width, big_rect.top + big_size.height / 2);
+
+				MyGUI::types::TRect<int> rect_3;
+				rect_3.set(big_rect.left, big_rect.top + big_size.height / 2, big_rect.left + big_size.width / 2, big_rect.top + big_size.height);
+
+				MyGUI::types::TRect<int> rect_4;
+				rect_4.set(big_rect.left + big_size.width / 2, big_rect.top + big_size.height / 2, big_rect.left + big_size.width , big_rect.top + big_size.height);
+
+				if (rect_1.inside(_value))
+				{
+					//LogManager::getSingletonPtr()->logMessage("rect_1");
+					return widget;
+				}
+
+				if (rect_2.inside(_value))
+				{
+					//LogManager::getSingletonPtr()->logMessage("rect_2");
+					std::string name = widget->getName();
+					std::vector<std::string> splitted = MyGUI::utility::split(name, "_");
+					if (!splitted.empty())
+					{
+						std::string slot_num = splitted.at(3);
+						std::vector<std::string> splitted_number = MyGUI::utility::split(slot_num, "x");
+						if (!splitted_number.empty())
+						{
+							int r = StringConverter::parseInt(splitted_number.at(0));
+							int c = StringConverter::parseInt(splitted_number.at(1));
+							MyGUI::Widget* ret = this->getWidgetSlotByRC(r, c+1);
+							return ret;
+						}
+					}
+				}
+
+				if (rect_3.inside(_value))
+				{
+					//LogManager::getSingletonPtr()->logMessage("rect_3");
+					std::string name = widget->getName();
+					std::vector<std::string> splitted = MyGUI::utility::split(name, "_");
+					if (!splitted.empty())
+					{
+						std::string slot_num = splitted.at(3);
+						std::vector<std::string> splitted_number = MyGUI::utility::split(slot_num, "x");
+						if (!splitted_number.empty())
+						{
+							int r = StringConverter::parseInt(splitted_number.at(0));
+							int c = StringConverter::parseInt(splitted_number.at(1));
+							MyGUI::Widget* ret = this->getWidgetSlotByRC(r+1, c);
+							return ret;
+						}
+					}
+				}
+
+				if (rect_4.inside(_value))
+				{
+					//LogManager::getSingletonPtr()->logMessage("rect_4");
+					std::string name = widget->getName();
+					std::vector<std::string> splitted = MyGUI::utility::split(name, "_");
+					if (!splitted.empty())
+					{
+						std::string slot_num = splitted.at(3);
+						std::vector<std::string> splitted_number = MyGUI::utility::split(slot_num, "x");
+						if (!splitted_number.empty())
+						{
+							int r = StringConverter::parseInt(splitted_number.at(0));
+							int c = StringConverter::parseInt(splitted_number.at(1));
+							MyGUI::Widget* ret = this->getWidgetSlotByRC(r+1, c+1);
+							return ret;
+						}
+					}
+				}
+
+				return widget; //should not return this !
+			}
+		}
+		return 0;
+	}
+
+	bool InventoryPanel::hitTestSlots(const MyGUI::types::TRect<int>&  _value)
+	{
+		int slot_count = this->mslot_container_panel_2_Widget->getChildCount();
+		for (int i = 0; i < slot_count; i++)
+		{
+			MyGUI::Widget* widget = this->mslot_container_panel_2_Widget->getChildAt(i);
+			if (widget->getAbsoluteRect().intersect(_value))
+				return true;
+		}
+		return false;
+	}
+
+	void InventoryPanel::setAllSlotsColor(MyGUI::Colour color)
+	{
+		int slot_count = this->mslot_container_panel_2_Widget->getChildCount();
+		for (int i = 0; i < slot_count; i++)
+		{
+			MyGUI::Widget* widget = this->mslot_container_panel_2_Widget->getChildAt(i);
+			widget->setColour(color);
+		}
+	}
+
+	Game::InventorySlot InventoryPanel::getSlotByWidgetName(std::string name)
+	{
+		Game::InventorySlot return_slot(0,0);
+		std::vector<std::string> splitted = MyGUI::utility::split(name, "_");
+		if (!splitted.empty())
+		{
+			std::string slot_num = splitted.at(3);
+			std::vector<std::string> splitted_number = MyGUI::utility::split(slot_num, "x");
+			if (!splitted_number.empty())
+			{
+				int r = StringConverter::parseInt(splitted_number.at(0));
+				int c = StringConverter::parseInt(splitted_number.at(1));
+				return_slot.R = r;
+				return_slot.C = c;
+				return return_slot;
+			}
+		}
+		return return_slot;
+	}
+
+	void InventoryPanel::setHoverSlotsColor(Game::InventorySlot* _slot, Game::InventorySize* _size, MyGUI::Colour color)
+	{
+		bool set_all_red = false;
+		for (int r = _slot->R; r < (_slot->R +_size->Height); r++)
+		{
+			for (int c = _slot->C; c < (_slot->C + _size->Width); c++)
+			{
+				Game::InventorySlot temp_slot(r,c);
+				MyGUI::Widget* wg = this->getWidgetSlotByRC(r,c);
+				if (wg != 0)
+					wg->setColour(color);
+				else
+					set_all_red = true;
+			}
+		}
+
+		if (set_all_red)
+		{
+			for (int r = _slot->R; r < (_slot->R +_size->Height); r++)
+			{
+				for (int c = _slot->C; c < (_slot->C + _size->Width); c++)
+				{
+					MyGUI::Widget* wg = this->getWidgetSlotByRC(r,c);
+					if (wg != 0)
+						wg->setColour(MyGUI::Colour::Red);
+				}
+			}
+		}
+	}
+
+	void InventoryPanel::setHoverSlotsColor(const MyGUI::types::TRect<int>&  _value , MyGUI::Colour color)
+	{
+		int slot_count = this->mslot_container_panel_2_Widget->getChildCount();
+		for (int i = 0; i < slot_count; i++)
+		{
+			MyGUI::Widget* widget = this->mslot_container_panel_2_Widget->getChildAt(i);
+			MyGUI::IntRect rectangle = widget->getAbsoluteRect();
+			MyGUI::IntSize _size = widget->getSize();
+			MyGUI::IntPoint center_rectangle = MyGUI::IntPoint(rectangle.left + (_size.width / 2), rectangle.top + (_size.height / 2));
+			//((center_rectangle.left > _value.left) && (center_rectangle.left < _value.right) && (center_rectangle.top > _value.top) && (center_rectangle.top < _value.bottom));
+			if (((center_rectangle.left >= _value.left) && (center_rectangle.left < _value.right) && (center_rectangle.top >= _value.top) && (center_rectangle.top < _value.bottom)))
+			{
+				//en el check de arriba, algunos son con igual y otros no porque sino se seleccionan mal, o 2 de 4 o 6 de 4 !
+				widget->setColour(color);
+			}
+		}
+	}

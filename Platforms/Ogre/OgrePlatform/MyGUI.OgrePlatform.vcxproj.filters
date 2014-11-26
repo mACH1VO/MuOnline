@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreDataManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreVertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreDataStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreRenderManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreRTTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_LastHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreDataManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreDataStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreDiagnostic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgrePlatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreRenderManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreRTTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreVertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\MU\Platforms\Ogre\OgrePlatform\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D44CD7F9-7E05-4CE8-B230-7337FF277F0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5D51C65A-2FA0-46DD-8359-A378AB538169}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
