@@ -32,7 +32,7 @@ Step 6, open mysql workbench, open connection, go to Server->Data Import, and se
 Step 7, Open Dirac solution (v 10 or 13), build it, open config.ini, in the [DataBaseConfig] section, write your user and password 
 
 
-Step 8, Open MU.sln, select release config, second click, REBUILD ALL.
+Step 8, Open MU.sln, select release config, second click in the solution, REBUILD ALL.
 
 
 Step 9, Now, run dirac server (debug or release, whatever) and then, from the VS instance, run the MegaProjectNative app and you are done ;)
