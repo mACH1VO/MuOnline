@@ -1,0 +1,40 @@
+﻿Build started 26/11/2014 01:49:19 p.m..
+     1>Project "E:\MuOnline\ThirdParty\Recast\Recast.vcxproj" on node 5 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\Recast.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IE:\MuOnline\ThirdParty\Recast\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\fastlz.cpp src\Recast.cpp src\RecastAlloc.cpp src\RecastArea.cpp src\RecastContour.cpp src\RecastFilter.cpp src\RecastLayers.cpp src\RecastMesh.cpp src\RecastMeshDetail.cpp src\RecastRasterization.cpp src\RecastRegion.cpp
+         fastlz.cpp
+         Recast.cpp
+     1>src\Recast.cpp(62): warning C4996: 'vsnprintf': This function or variable may be unsafe. Consider using vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(354) : see declaration of 'vsnprintf'
+         RecastAlloc.cpp
+         RecastArea.cpp
+         RecastContour.cpp
+         RecastFilter.cpp
+         RecastLayers.cpp
+         RecastMesh.cpp
+         RecastMeshDetail.cpp
+         RecastRasterization.cpp
+         RecastRegion.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"E:\MuOnline\lib\Release\Recast.lib" /NOLOGO /LTCG Release\fastlz.obj
+         Release\Recast.obj
+         Release\RecastAlloc.obj
+         Release\RecastArea.obj
+         Release\RecastContour.obj
+         Release\RecastFilter.obj
+         Release\RecastLayers.obj
+         Release\RecastMesh.obj
+         Release\RecastMeshDetail.obj
+         Release\RecastRasterization.obj
+         Release\RecastRegion.obj
+         Recast.vcxproj -> E:\MuOnline\lib\Release\Recast.lib
+       FinalizeBuildStatus:
+         Deleting file "Release\Recast.unsuccessfulbuild".
+         Touching "Release\Recast.lastbuildstate".
+     1>Done Building Project "E:\MuOnline\ThirdParty\Recast\Recast.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.24

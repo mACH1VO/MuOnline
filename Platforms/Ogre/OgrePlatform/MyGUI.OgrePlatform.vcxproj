@@ -90,10 +90,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -120,10 +120,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -133,7 +133,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -150,10 +150,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -163,7 +163,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -179,10 +179,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>

@@ -73,7 +73,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)boost-1.56-vc100;$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)boost-1.56-vc100;$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -90,10 +90,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;MYGUI_OGRE_PLATFORM;MYGUI_SAMPLES_INPUT_WIN32;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -120,10 +120,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;MYGUI_OGRE_PLATFORM;MYGUI_SAMPLES_INPUT_WIN32;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -133,7 +133,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -150,10 +150,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;MYGUI_OGRE_PLATFORM;MYGUI_SAMPLES_INPUT_WIN32;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -163,7 +163,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -179,10 +179,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;MYGUI_OGRE_PLATFORM;MYGUI_SAMPLES_INPUT_WIN32;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include\OGRE;E:\OgreSnapshot\OGRE-SDK-1.9.0-vc100-x86-02.08.2014\include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MyGUIEngine\include;$(SolutionDir)Common\.;$(SolutionDir)Common;$(SolutionDir)Common\Base\Ogre;$(SolutionDir)Platforms\Ogre\OgrePlatform\include;$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Common\Input\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -190,58 +190,6 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <CustomBuild Include="$(SolutionDir)Common\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/SourceTree/mygui/Common/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/SourceTree/mygui -BE:/my_mygui --check-stamp-file $(SolutionDir)Common\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/SourceTree/mygui/Common/CMakeLists.txt;$(SolutionDir)Common\CMakeLists.txt;$(SolutionDir)Common\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Common\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/SourceTree/mygui/Common/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/SourceTree/mygui -BE:/my_mygui --check-stamp-file $(SolutionDir)Common\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/SourceTree/mygui/Common/CMakeLists.txt;$(SolutionDir)Common\CMakeLists.txt;$(SolutionDir)Common\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)Common\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/SourceTree/mygui/Common/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/SourceTree/mygui -BE:/my_mygui --check-stamp-file $(SolutionDir)Common\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/SourceTree/mygui/Common/CMakeLists.txt;$(SolutionDir)Common\CMakeLists.txt;$(SolutionDir)Common\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)Common\CMakeFiles\generate.stamp</Outputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/SourceTree/mygui/Common/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HE:/SourceTree/mygui -BE:/my_mygui --check-stamp-file $(SolutionDir)Common\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/SourceTree/mygui/Common/CMakeLists.txt;$(SolutionDir)Common\CMakeLists.txt;$(SolutionDir)Common\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)Common\CMakeFiles\generate.stamp</Outputs>
-    </CustomBuild>
-  </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(SolutionDir)Common\Base\Ogre\BaseManager.h" />
     <ClInclude Include="$(SolutionDir)Common\Input\Win32\InputManager.h" />

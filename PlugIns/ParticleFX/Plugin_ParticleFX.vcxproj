@@ -54,25 +54,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MU\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Plugin_ParticleFX.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Plugin_ParticleFX_d</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MU\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Plugin_ParticleFX.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Plugin_ParticleFX</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MU\bin\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Plugin_ParticleFX.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Plugin_ParticleFX</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MU\bin\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Plugin_ParticleFX.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Plugin_ParticleFX</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
@@ -82,7 +82,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -103,10 +103,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEBUG;OGRE_PARTICLEFXPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"Debug\";Plugin_ParticleFX_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -115,11 +115,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\OgreMain_d.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-gd-1_56.lib;E:\MU\Dependencies\lib\Debug\FreeImageLib.lib;E:\MU\Dependencies\lib\Debug\zziplibd.lib;E:\MU\Dependencies\lib\Debug\ZLib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)lib\Debug\OgreMain_d.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_thread-vc100-mt-gd-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_date_time-vc100-mt-gd-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_system-vc100-mt-gd-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_atomic-vc100-mt-gd-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_chrono-vc100-mt-gd-1_56.lib;$(SolutionDir)Dependencies\lib\Debug\FreeImageLib.lib;$(SolutionDir)Dependencies\lib\Debug\zziplibd.lib;$(SolutionDir)Dependencies\lib\Debug\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)boost-1.56-vc100/lib;$(SolutionDir)boost-1.56-vc100/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>E:/MU/lib/Debug/Plugin_ParticleFX_d.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MU/bin/Debug/Plugin_ParticleFX_d.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)lib/Debug/Plugin_ParticleFX_d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)bin/Debug/Plugin_ParticleFX_d.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -131,7 +131,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
@@ -151,10 +151,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRE_PARTICLEFXPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"Release\";Plugin_ParticleFX_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -163,11 +163,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\OgreMain.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)lib\Release\OgreMain.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_thread-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_date_time-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_system-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_atomic-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_chrono-vc100-mt-1_56.lib;$(SolutionDir)Dependencies\lib\Release\FreeImageLib.lib;$(SolutionDir)Dependencies\lib\Release\zziplib.lib;$(SolutionDir)Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)boost-1.56-vc100/lib;$(SolutionDir)boost-1.56-vc100/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>E:/MU/lib/Release/Plugin_ParticleFX.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MU/bin/Release/Plugin_ParticleFX.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)lib/Release/Plugin_ParticleFX.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)bin/Release/Plugin_ParticleFX.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -179,7 +179,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
@@ -199,10 +199,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRE_PARTICLEFXPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"MinSizeRel\";Plugin_ParticleFX_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -211,11 +211,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\MinSizeRel\OgreMain.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\MinSizeRel\OgreMain.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_thread-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_date_time-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_system-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_atomic-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_chrono-vc100-mt-1_56.lib;$(SolutionDir)Dependencies\lib\Release\FreeImageLib.lib;$(SolutionDir)Dependencies\lib\Release\zziplib.lib;$(SolutionDir)Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)boost-1.56-vc100/lib;$(SolutionDir)boost-1.56-vc100/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>E:/MU/lib/MinSizeRel/Plugin_ParticleFX.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MU/bin/MinSizeRel/Plugin_ParticleFX.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)lib/MinSizeRel/Plugin_ParticleFX.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)bin/MinSizeRel/Plugin_ParticleFX.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -227,7 +227,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -246,10 +246,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;OGRE_PARTICLEFXPLUGIN_EXPORTS;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;_USRDLL;CMAKE_INTDIR=\"RelWithDebInfo\";Plugin_ParticleFX_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)PlugIns\ParticleFX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -258,11 +258,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\RelWithDebInfo\OgreMain.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\RelWithDebInfo\OgreMain.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_thread-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_date_time-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_system-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_atomic-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_chrono-vc100-mt-1_56.lib;$(SolutionDir)Dependencies\lib\Release\FreeImageLib.lib;$(SolutionDir)Dependencies\lib\Release\zziplib.lib;$(SolutionDir)Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)boost-1.56-vc100/lib;$(SolutionDir)boost-1.56-vc100/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>E:/MU/lib/RelWithDebInfo/Plugin_ParticleFX.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MU/bin/RelWithDebInfo/Plugin_ParticleFX.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)lib/RelWithDebInfo/Plugin_ParticleFX.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)bin/RelWithDebInfo/Plugin_ParticleFX.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -272,7 +272,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="E:/MU/OgreMain/OgreMain.vcxproj">
+    <ProjectReference Include="$(SolutionDir)OgreMain/OgreMain.vcxproj">
       <Project>06B0857D-46D1-4FBD-B252-03FD1C057906</Project>
     </ProjectReference>
   </ItemGroup>

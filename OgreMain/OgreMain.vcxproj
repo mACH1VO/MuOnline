@@ -54,25 +54,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\MU\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OgreMain.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OgreMain_d</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\MU\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OgreMain.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OgreMain</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\MU\bin\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">OgreMain.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">OgreMain</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\MU\bin\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">OgreMain.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">OgreMain</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
@@ -82,7 +82,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -104,10 +104,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;OGRE_NONCLIENT_BUILD;FREEIMAGE_LIB;_MT;_USRDLL;CMAKE_INTDIR=\"Debug\";OgreMain_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -116,11 +116,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-gd-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-gd-1_56.lib;E:\MU\Dependencies\lib\Debug\FreeImageLib.lib;E:\MU\Dependencies\lib\Debug\zziplibd.lib;E:\MU\Dependencies\lib\Debug\ZLib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_thread-vc100-mt-gd-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_date_time-vc100-mt-gd-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_system-vc100-mt-gd-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_atomic-vc100-mt-gd-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_chrono-vc100-mt-gd-1_56.lib;$(SolutionDir)Dependencies\lib\Debug\FreeImageLib.lib;$(SolutionDir)Dependencies\lib\Debug\zziplibd.lib;$(SolutionDir)Dependencies\lib\Debug\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)boost-1.56-vc100/lib;$(SolutionDir)boost-1.56-vc100/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>E:/MU/lib/Debug/OgreMain_d.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MU/bin/Debug/OgreMain_d.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)lib/Debug/OgreMain_d.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)bin/Debug/OgreMain_d.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -132,7 +132,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
@@ -153,10 +153,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;OGRE_NONCLIENT_BUILD;FREEIMAGE_LIB;_MT;_USRDLL;CMAKE_INTDIR=\"Release\";OgreMain_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -165,11 +165,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_thread-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_date_time-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_system-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_atomic-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_chrono-vc100-mt-1_56.lib;$(SolutionDir)Dependencies\lib\Release\FreeImageLib.lib;$(SolutionDir)Dependencies\lib\Release\zziplib.lib;$(SolutionDir)Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)boost-1.56-vc100/lib;$(SolutionDir)boost-1.56-vc100/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>E:/MU/lib/Release/OgreMain.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MU/bin/Release/OgreMain.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)lib/Release/OgreMain.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)bin/Release/OgreMain.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -181,7 +181,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
@@ -202,10 +202,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;OGRE_NONCLIENT_BUILD;FREEIMAGE_LIB;_MT;_USRDLL;CMAKE_INTDIR=\"MinSizeRel\";OgreMain_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -214,11 +214,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_thread-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_date_time-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_system-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_atomic-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_chrono-vc100-mt-1_56.lib;$(SolutionDir)Dependencies\lib\Release\FreeImageLib.lib;$(SolutionDir)Dependencies\lib\Release\zziplib.lib;$(SolutionDir)Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)boost-1.56-vc100/lib;$(SolutionDir)boost-1.56-vc100/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>E:/MU/lib/MinSizeRel/OgreMain.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MU/bin/MinSizeRel/OgreMain.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)lib/MinSizeRel/OgreMain.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)bin/MinSizeRel/OgreMain.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -230,7 +230,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
       <AdditionalOptions> /Zm256 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -250,10 +250,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_THREAD_VERSION=4;BOOST_ALL_NO_LIB;OGRE_NONCLIENT_BUILD;FREEIMAGE_LIB;_MT;_USRDLL;CMAKE_INTDIR=\"RelWithDebInfo\";OgreMain_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\MU\OgreMain\include;E:\MU\include;E:\MU\Dependencies\include;E:\MU\Dependencies\include\freetype;E:\MU\Dependencies\include\OIS;E:\MU\Dependencies\include\Cg;E:\MU\Dependencies;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014;E:\MU\OgreMain\include\WIN32;E:\MU\OgreMain\include\Threading;E:\MU\OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)OgreMain\include;$(SolutionDir)include;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\freetype;$(SolutionDir)Dependencies\include\OIS;$(SolutionDir)Dependencies\include\Cg;$(SolutionDir)Dependencies;$(SolutionDir)boost-1.56-vc100;$(SolutionDir)OgreMain\include\WIN32;$(SolutionDir)OgreMain\include\Threading;$(SolutionDir)OgreMain\src\nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -262,11 +262,11 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_thread-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_date_time-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_system-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_atomic-vc100-mt-1_56.lib;E:\OgreSnapshot\boost-1.56-vc100-x86-02.08.2014\lib\libboost_chrono-vc100-mt-1_56.lib;E:\MU\Dependencies\lib\Release\FreeImageLib.lib;E:\MU\Dependencies\lib\Release\zziplib.lib;E:\MU\Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(BOOST_ROOT)/lib;$(BOOST_ROOT)/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_thread-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_date_time-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_system-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_atomic-vc100-mt-1_56.lib;$(SolutionDir)boost-1.56-vc100\lib\libboost_chrono-vc100-mt-1_56.lib;$(SolutionDir)Dependencies\lib\Release\FreeImageLib.lib;$(SolutionDir)Dependencies\lib\Release\zziplib.lib;$(SolutionDir)Dependencies\lib\Release\ZLib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)boost-1.56-vc100/lib;$(SolutionDir)boost-1.56-vc100/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>E:/MU/lib/RelWithDebInfo/OgreMain.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/MU/bin/RelWithDebInfo/OgreMain.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)lib/RelWithDebInfo/OgreMain.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)bin/RelWithDebInfo/OgreMain.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -276,378 +276,378 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="E:\MU\OgreMain\include\asm_math.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Ogre.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreAlignedAllocator.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreAnimable.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreAnimation.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreAnimationState.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreAnimationTrack.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreAny.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreArchive.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreArchiveFactory.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreArchiveManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreAtomicObject.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreAtomicScalar.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreAutoParamDataSource.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreAxisAlignedBox.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreBillboard.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreBillboardChain.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreBillboardParticleRenderer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreBillboardSet.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreBitwise.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreBlendMode.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreBone.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCamera.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCodec.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreColourValue.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCommon.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCompositionPass.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCompositionTargetPass.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCompositionTechnique.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCompositor.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCompositorChain.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCompositorInstance.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCompositorLogic.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCompositorManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreConfig.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreConfigDialog.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreConfigFile.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreConfigOptionMap.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreController.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreControllerManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreConvexBody.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreCustomCompositionPass.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreDataStream.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreDefaultHardwareBufferManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreDeflate.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreDepthBuffer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreDistanceLodStrategy.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreDualQuaternion.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreDynLib.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreDynLibManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreEdgeListBuilder.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreEntity.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreErrorDialog.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreException.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreExternalTextureSource.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreExternalTextureSourceManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreFactoryObj.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreFileSystem.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreFileSystemLayer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreFrameListener.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreFrustum.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreGpuProgram.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreGpuProgramManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreGpuProgramParams.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreGpuProgramUsage.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHardwareBuffer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHardwareBufferManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHardwareCounterBuffer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHardwareIndexBuffer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHardwareOcclusionQuery.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHardwarePixelBuffer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHardwareUniformBuffer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHardwareVertexBuffer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHeaderPrefix.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHeaderSuffix.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHighLevelGpuProgram.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreHighLevelGpuProgramManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreImage.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreImageCodec.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreInstanceBatch.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreInstanceBatchHW.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreInstanceBatchHW_VTF.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreInstanceBatchShader.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreInstanceBatchVTF.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreInstancedEntity.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreInstancedGeometry.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreInstanceManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreIteratorRange.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreIteratorWrapper.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreIteratorWrappers.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreKeyFrame.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreLight.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreLodListener.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreLodStrategy.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreLodStrategyManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreLog.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreLogManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreManualObject.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMaterial.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMaterialManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMaterialSerializer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMath.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMatrix3.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMatrix4.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMemoryAllocatedObject.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMemoryAllocatorConfig.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMemoryNedAlloc.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMemoryNedPooling.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMemoryStdAlloc.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMemorySTLAllocator.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMemoryTracker.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMesh.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMeshFileFormat.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMeshManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMeshSerializer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMeshSerializerImpl.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMovableObject.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreMovablePlane.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreNameGenerator.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreNode.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreNumerics.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreOptimisedUtil.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreParticle.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreParticleAffector.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreParticleAffectorFactory.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreParticleEmitter.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreParticleEmitterCommands.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreParticleEmitterFactory.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreParticleIterator.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreParticleSystem.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreParticleSystemManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreParticleSystemRenderer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePass.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePatchMesh.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePatchSurface.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePixelCountLodStrategy.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePixelFormat.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePixelFormatDescriptions.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePlane.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePlaneBoundedVolume.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePlatform.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePlatformInformation.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePlugin.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePolygon.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePose.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePredefinedControllers.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePrefabFactory.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgrePrerequisites.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreProfiler.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreQuaternion.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRadixSort.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRay.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRectangle2D.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderable.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderObjectListener.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderOperation.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderQueue.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderQueueInvocation.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderQueueListener.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderQueueSortingGrouping.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderSystem.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderSystemCapabilities.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderSystemCapabilitiesManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderSystemCapabilitiesSerializer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderTarget.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderTargetListener.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderTexture.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderToVertexBuffer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRenderWindow.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreResource.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreResourceBackgroundQueue.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreResourceGroupManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreResourceManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRibbonTrail.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRoot.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreRotationalSpline.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSceneManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSceneManagerEnumerator.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSceneNode.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSceneQuery.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreScriptCompiler.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreScriptLexer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreScriptLoader.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreScriptParser.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreScriptTranslator.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSearchOps.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSerializer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreShadowCameraSetup.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreShadowCameraSetupFocused.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreShadowCameraSetupLiSPSM.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreShadowCameraSetupPlaneOptimal.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreShadowCameraSetupPSSM.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreShadowCaster.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreShadowTextureManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreShadowVolumeExtrudeProgram.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSharedPtr.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSimpleRenderable.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSimpleSpline.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSingleton.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSkeleton.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSkeletonFileFormat.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSkeletonInstance.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSkeletonManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSkeletonSerializer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSphere.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSpotShadowFadePng.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreStableHeaders.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreStaticFaceGroup.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreStaticGeometry.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreStdHeaders.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreStreamSerialiser.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreString.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreStringConverter.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreStringInterface.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreStringVector.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSubEntity.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreSubMesh.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreTagPoint.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreTangentSpaceCalc.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreTechnique.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreTexture.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreTextureManager.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreTextureUnitState.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreTimer.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreUnifiedHighLevelGpuProgram.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreUserObjectBindings.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreUTFString.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreVector2.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreVector3.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreVector4.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreVertexBoneAssignment.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreVertexIndexData.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreViewport.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreWindowEventUtilities.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreWireBoundingBox.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreWorkQueue.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\asm_math.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Ogre.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreAlignedAllocator.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreAnimable.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreAnimation.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreAnimationState.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreAnimationTrack.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreAny.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreArchive.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreArchiveFactory.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreArchiveManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreAtomicObject.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreAtomicScalar.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreAutoParamDataSource.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreAxisAlignedBox.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreBillboard.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreBillboardChain.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreBillboardParticleRenderer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreBillboardSet.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreBitwise.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreBlendMode.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreBone.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCamera.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCodec.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreColourValue.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCommon.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCompositionPass.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCompositionTargetPass.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCompositionTechnique.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCompositor.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCompositorChain.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCompositorInstance.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCompositorLogic.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCompositorManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreConfig.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreConfigDialog.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreConfigFile.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreConfigOptionMap.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreController.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreControllerManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreConvexBody.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreCustomCompositionPass.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreDataStream.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreDefaultHardwareBufferManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreDeflate.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreDepthBuffer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreDistanceLodStrategy.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreDualQuaternion.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreDynLib.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreDynLibManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreEdgeListBuilder.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreEntity.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreErrorDialog.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreException.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreExternalTextureSource.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreExternalTextureSourceManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreFactoryObj.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreFileSystem.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreFileSystemLayer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreFrameListener.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreFrustum.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreGpuProgram.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreGpuProgramManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreGpuProgramParams.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreGpuProgramUsage.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHardwareBuffer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHardwareBufferManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHardwareCounterBuffer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHardwareIndexBuffer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHardwareOcclusionQuery.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHardwarePixelBuffer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHardwareUniformBuffer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHardwareVertexBuffer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHeaderPrefix.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHeaderSuffix.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHighLevelGpuProgram.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreHighLevelGpuProgramManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreImage.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreImageCodec.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreInstanceBatch.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreInstanceBatchHW.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreInstanceBatchHW_VTF.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreInstanceBatchShader.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreInstanceBatchVTF.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreInstancedEntity.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreInstancedGeometry.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreInstanceManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreIteratorRange.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreIteratorWrapper.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreIteratorWrappers.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreKeyFrame.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreLight.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreLodListener.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreLodStrategy.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreLodStrategyManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreLog.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreLogManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreManualObject.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMaterial.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMaterialManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMaterialSerializer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMath.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMatrix3.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMatrix4.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMemoryAllocatedObject.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMemoryAllocatorConfig.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMemoryNedAlloc.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMemoryNedPooling.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMemoryStdAlloc.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMemorySTLAllocator.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMemoryTracker.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMesh.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMeshFileFormat.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMeshManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMeshSerializer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMeshSerializerImpl.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMovableObject.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreMovablePlane.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreNameGenerator.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreNode.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreNumerics.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreOptimisedUtil.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreParticle.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreParticleAffector.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreParticleAffectorFactory.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreParticleEmitter.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreParticleEmitterCommands.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreParticleEmitterFactory.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreParticleIterator.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreParticleSystem.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreParticleSystemManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreParticleSystemRenderer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePass.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePatchMesh.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePatchSurface.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePixelCountLodStrategy.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePixelFormat.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePixelFormatDescriptions.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePlane.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePlaneBoundedVolume.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePlatform.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePlatformInformation.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePlugin.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePolygon.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePose.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePredefinedControllers.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePrefabFactory.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgrePrerequisites.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreProfiler.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreQuaternion.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRadixSort.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRay.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRectangle2D.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderable.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderObjectListener.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderOperation.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderQueue.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderQueueInvocation.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderQueueListener.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderQueueSortingGrouping.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderSystem.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderSystemCapabilities.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderSystemCapabilitiesManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderSystemCapabilitiesSerializer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderTarget.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderTargetListener.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderTexture.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderToVertexBuffer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRenderWindow.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreResource.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreResourceBackgroundQueue.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreResourceGroupManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreResourceManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRibbonTrail.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRoot.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreRotationalSpline.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSceneManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSceneManagerEnumerator.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSceneNode.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSceneQuery.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreScriptCompiler.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreScriptLexer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreScriptLoader.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreScriptParser.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreScriptTranslator.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSearchOps.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSerializer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreShadowCameraSetup.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreShadowCameraSetupFocused.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreShadowCameraSetupLiSPSM.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreShadowCameraSetupPlaneOptimal.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreShadowCameraSetupPSSM.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreShadowCaster.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreShadowTextureManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreShadowVolumeExtrudeProgram.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSharedPtr.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSimpleRenderable.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSimpleSpline.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSingleton.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSkeleton.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSkeletonFileFormat.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSkeletonInstance.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSkeletonManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSkeletonSerializer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSphere.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSpotShadowFadePng.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreStableHeaders.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreStaticFaceGroup.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreStaticGeometry.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreStdHeaders.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreStreamSerialiser.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreString.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreStringConverter.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreStringInterface.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreStringVector.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSubEntity.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreSubMesh.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreTagPoint.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreTangentSpaceCalc.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreTechnique.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreTexture.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreTextureManager.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreTextureUnitState.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreTimer.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreUnifiedHighLevelGpuProgram.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreUserObjectBindings.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreUTFString.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreVector2.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreVector3.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreVector4.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreVertexBoneAssignment.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreVertexIndexData.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreViewport.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreWindowEventUtilities.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreWireBoundingBox.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreWorkQueue.h" />
     <ClInclude Include="..\include\OgreBuildSettings.h" />
-    <ClInclude Include="E:\MU\OgreMain\src\OgreImageResampler.h" />
-    <ClInclude Include="E:\MU\OgreMain\src\OgrePixelConversions.h" />
-    <ClInclude Include="E:\MU\OgreMain\src\OgreSIMDHelper.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreDefaultWorkQueue.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreDefaultWorkQueueStandard.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreDefaultWorkQueueTBB.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreThreadDefines.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreThreadDefinesBoost.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreThreadDefinesNone.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreThreadDefinesPoco.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreThreadDefinesTBB.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreThreadHeaders.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreThreadHeadersBoost.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreThreadHeadersPoco.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\Threading\OgreThreadHeadersTBB.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreFreeImageCodec.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreDDSCodec.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\OgreZip.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\WIN32\OgreConfigDialogImp.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\WIN32\OgreErrorDialogImp.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\WIN32\OgreTimerImp.h" />
-    <ClInclude Include="E:\MU\OgreMain\include\WIN32\OgreMinGWSupport.h" />
-    <ClInclude Include="E:\MU\OgreMain\src\WIN32\resource.h" />
-    <ClInclude Include="E:\MU\OgreMain\src\WIN32\winres.h" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreAlignedAllocator.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreAnimable.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreAnimation.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreAnimationState.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreAnimationTrack.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreArchive.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreArchiveManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreAtomicScalar.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreAutoParamDataSource.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreAxisAlignedBox.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreBillboard.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreBillboardChain.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreBillboardParticleRenderer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreBillboardSet.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreBone.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreCamera.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreCodec.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreColourValue.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreCommon.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreCompositionPass.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreCompositionTargetPass.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreCompositionTechnique.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreCompositor.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreCompositorChain.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreCompositorInstance.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreCompositorManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreConfigFile.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreControllerManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreConvexBody.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreDataStream.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreDefaultHardwareBufferManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreDefaultSceneQueries.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreDeflate.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreDepthBuffer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreDistanceLodStrategy.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreDualQuaternion.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreDynLib.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreDynLibManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreEdgeListBuilder.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreEntity.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreException.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreExternalTextureSource.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreExternalTextureSourceManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreFileSystem.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreFrustum.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreGpuProgram.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreGpuProgramManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreGpuProgramParams.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreGpuProgramUsage.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreHardwareBufferManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreHardwareCounterBuffer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreHardwareIndexBuffer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreHardwareOcclusionQuery.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreHardwarePixelBuffer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreHardwareUniformBuffer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreHardwareVertexBuffer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreHighLevelGpuProgram.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreHighLevelGpuProgramManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreImage.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreInstanceBatch.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreInstanceBatchHW.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreInstanceBatchHW_VTF.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreInstanceBatchShader.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreInstanceBatchVTF.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreInstancedEntity.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreInstancedGeometry.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreInstanceManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreKeyFrame.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreLight.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreLodStrategy.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreLodStrategyManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreLog.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreLogManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreManualObject.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMaterial.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMaterialManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMaterialSerializer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMath.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMatrix3.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMatrix4.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMemoryAllocatedObject.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMemoryNedAlloc.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMemoryNedPooling.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMemoryTracker.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMesh.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMeshManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMeshSerializer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMeshSerializerImpl.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMovableObject.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreMovablePlane.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreNode.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreNumerics.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreOptimisedUtil.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreOptimisedUtilGeneral.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreOptimisedUtilSSE.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreParticle.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreParticleEmitter.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreParticleEmitterCommands.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreParticleIterator.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreParticleSystem.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreParticleSystemManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePass.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePatchMesh.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePatchSurface.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePixelCountLodStrategy.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePixelFormat.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePlane.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePlatformInformation.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePolygon.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePose.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePrecompiledHeaders.cpp">
+    <ClInclude Include="$(SolutionDir)OgreMain\src\OgreImageResampler.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\src\OgrePixelConversions.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\src\OgreSIMDHelper.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreDefaultWorkQueue.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreDefaultWorkQueueStandard.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreDefaultWorkQueueTBB.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreThreadDefines.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreThreadDefinesBoost.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreThreadDefinesNone.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreThreadDefinesPoco.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreThreadDefinesTBB.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreThreadHeaders.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreThreadHeadersBoost.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreThreadHeadersPoco.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\Threading\OgreThreadHeadersTBB.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreFreeImageCodec.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreDDSCodec.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\OgreZip.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\WIN32\OgreConfigDialogImp.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\WIN32\OgreErrorDialogImp.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\WIN32\OgreTimerImp.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\include\WIN32\OgreMinGWSupport.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\src\WIN32\resource.h" />
+    <ClInclude Include="$(SolutionDir)OgreMain\src\WIN32\winres.h" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreAlignedAllocator.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreAnimable.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreAnimation.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreAnimationState.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreAnimationTrack.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreArchive.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreArchiveManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreAtomicScalar.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreAutoParamDataSource.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreAxisAlignedBox.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreBillboard.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreBillboardChain.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreBillboardParticleRenderer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreBillboardSet.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreBone.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreCamera.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreCodec.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreColourValue.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreCommon.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreCompositionPass.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreCompositionTargetPass.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreCompositionTechnique.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreCompositor.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreCompositorChain.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreCompositorInstance.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreCompositorManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreConfigFile.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreControllerManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreConvexBody.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreDataStream.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreDefaultHardwareBufferManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreDefaultSceneQueries.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreDeflate.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreDepthBuffer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreDistanceLodStrategy.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreDualQuaternion.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreDynLib.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreDynLibManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreEdgeListBuilder.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreEntity.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreException.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreExternalTextureSource.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreExternalTextureSourceManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreFileSystem.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreFrustum.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreGpuProgram.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreGpuProgramManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreGpuProgramParams.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreGpuProgramUsage.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreHardwareBufferManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreHardwareCounterBuffer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreHardwareIndexBuffer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreHardwareOcclusionQuery.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreHardwarePixelBuffer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreHardwareUniformBuffer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreHardwareVertexBuffer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreHighLevelGpuProgram.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreHighLevelGpuProgramManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreImage.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreInstanceBatch.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreInstanceBatchHW.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreInstanceBatchHW_VTF.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreInstanceBatchShader.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreInstanceBatchVTF.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreInstancedEntity.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreInstancedGeometry.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreInstanceManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreKeyFrame.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreLight.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreLodStrategy.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreLodStrategyManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreLog.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreLogManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreManualObject.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMaterial.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMaterialManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMaterialSerializer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMath.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMatrix3.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMatrix4.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMemoryAllocatedObject.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMemoryNedAlloc.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMemoryNedPooling.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMemoryTracker.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMesh.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMeshManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMeshSerializer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMeshSerializerImpl.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMovableObject.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreMovablePlane.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreNode.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreNumerics.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreOptimisedUtil.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreOptimisedUtilGeneral.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreOptimisedUtilSSE.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreParticle.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreParticleEmitter.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreParticleEmitterCommands.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreParticleIterator.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreParticleSystem.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreParticleSystemManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePass.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePatchMesh.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePatchSurface.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePixelCountLodStrategy.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePixelFormat.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePlane.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePlatformInformation.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePolygon.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePose.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePrecompiledHeaders.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OgreStableHeaders.h</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -657,86 +657,86 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">OgreStableHeaders.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePredefinedControllers.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgrePrefabFactory.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreProfiler.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreQuaternion.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRectangle2D.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRenderQueue.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRenderQueueInvocation.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRenderQueueSortingGrouping.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRenderSystem.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRenderSystemCapabilities.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRenderSystemCapabilitiesManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRenderSystemCapabilitiesSerializer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRenderTarget.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRenderTexture.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRenderToVertexBuffer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRenderWindow.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreResource.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreResourceBackgroundQueue.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreResourceGroupManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreResourceManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRibbonTrail.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRoot.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreRotationSpline.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSceneManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSceneManagerEnumerator.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSceneNode.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSceneQuery.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreScriptCompiler.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreScriptLexer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreScriptParser.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreScriptTranslator.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSerializer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreShadowCameraSetup.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreShadowCameraSetupFocused.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreShadowCameraSetupLiSPSM.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreShadowCameraSetupPlaneOptimal.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreShadowCameraSetupPSSM.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreShadowCaster.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreShadowTextureManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreShadowVolumeExtrudeProgram.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSimpleRenderable.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSimpleSpline.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSkeleton.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSkeletonInstance.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSkeletonManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSkeletonSerializer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreStaticGeometry.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreStreamSerialiser.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreString.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreStringConverter.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreStringInterface.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSubEntity.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreSubMesh.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreTagPoint.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreTangentSpaceCalc.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreTechnique.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreTexture.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreTextureManager.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreTextureUnitState.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreUnifiedHighLevelGpuProgram.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreUserObjectBindings.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreUTFString.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreVector2.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreVector3.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreVector4.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreVertexIndexData.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreViewport.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreWindowEventUtilities.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreWireBoundingBox.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreWorkQueue.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreFreeImageCodec.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreDDSCodec.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\OgreZip.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\WIN32\OgreOptimisedUtilDirectXMath.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\WIN32\OgreConfigDialog.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\WIN32\OgreErrorDialog.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\WIN32\OgreFileSystemLayer.cpp" />
-    <ClCompile Include="E:\MU\OgreMain\src\WIN32\OgreTimer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePredefinedControllers.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgrePrefabFactory.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreProfiler.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreQuaternion.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRectangle2D.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRenderQueue.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRenderQueueInvocation.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRenderQueueSortingGrouping.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRenderSystem.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRenderSystemCapabilities.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRenderSystemCapabilitiesManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRenderSystemCapabilitiesSerializer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRenderTarget.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRenderTexture.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRenderToVertexBuffer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRenderWindow.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreResource.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreResourceBackgroundQueue.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreResourceGroupManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreResourceManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRibbonTrail.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRoot.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreRotationSpline.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSceneManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSceneManagerEnumerator.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSceneNode.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSceneQuery.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreScriptCompiler.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreScriptLexer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreScriptParser.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreScriptTranslator.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSerializer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreShadowCameraSetup.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreShadowCameraSetupFocused.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreShadowCameraSetupLiSPSM.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreShadowCameraSetupPlaneOptimal.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreShadowCameraSetupPSSM.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreShadowCaster.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreShadowTextureManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreShadowVolumeExtrudeProgram.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSimpleRenderable.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSimpleSpline.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSkeleton.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSkeletonInstance.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSkeletonManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSkeletonSerializer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreStaticGeometry.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreStreamSerialiser.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreString.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreStringConverter.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreStringInterface.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSubEntity.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreSubMesh.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreTagPoint.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreTangentSpaceCalc.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreTechnique.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreTexture.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreTextureManager.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreTextureUnitState.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreUnifiedHighLevelGpuProgram.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreUserObjectBindings.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreUTFString.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreVector2.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreVector3.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreVector4.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreVertexIndexData.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreViewport.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreWindowEventUtilities.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreWireBoundingBox.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreWorkQueue.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreFreeImageCodec.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreDDSCodec.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\OgreZip.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\WIN32\OgreOptimisedUtilDirectXMath.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\WIN32\OgreConfigDialog.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\WIN32\OgreErrorDialog.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\WIN32\OgreFileSystemLayer.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\WIN32\OgreTimer.cpp" />
     <ResourceCompile Include="..\..\SourceTree\ogre\OgreMain\src\WIN32\OgreWin32Resources.rc" />
-    <ClCompile Include="E:\MU\OgreMain\src\Threading\OgreDefaultWorkQueueStandard.cpp" />
+    <ClCompile Include="$(SolutionDir)OgreMain\src\Threading\OgreDefaultWorkQueueStandard.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\ogremain.map" />
