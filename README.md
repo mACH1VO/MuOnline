@@ -23,7 +23,7 @@ Boost: https://mega.co.nz/#!ZBdBgaTY!FfnIzy2ZK4kH1ER3xBQY2vHGcjG5efJ3hnVQ8DheLJ4
 Media: https://mega.co.nz/#!cZ8SRKDR!UZ29pvQKiv31vmnVkaMyIehuLbbAQ6IBOYi2JVr9PA8
 
 
-step 5, extract dep, boost and media in MuOnline folder. (uncompressed boost is about 3gb)
+Step 5, extract dep, boost and media in MuOnline folder. (uncompressed boost is about 3gb)
 
 
 Step 6, open mysql workbench, open connection, go to Server->Data Import, and select muonline.sql (located in DataBase folder, Dirac server, this should restore the db, pretty empty but dirac needs it!.)
