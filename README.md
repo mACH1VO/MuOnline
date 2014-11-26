@@ -8,7 +8,7 @@ Step 1, install all .NET Frameworks. (including client profiles) and Microsoft V
 Step 2, install DirectX End-User Runtimes (June 2010)
 
 
-Step 3, install mysql workbech (need Visual C++ Redistributable)
+Step 3, install mysql workbech (Visual C++ Redistributable 2013 and .NET 4 client profile needed, according to oracle)
 
 
 Step 4, download dependencies, boost and media.
