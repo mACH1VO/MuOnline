@@ -37,4 +37,4 @@ note: you can build also the debug version, but the framerate will be very low.
 note2: th default option when rebuilding the solution is to create the precompiler headers, to change that, select "Use precompiler headers" and build again.
 
 
-Step 9, Now, run dirac server (debug or release, whatever) and then, from the VS instance, run the MegaProjectNative app and you are done ;)
+Step 9, Now, run dirac server (debug or release, whatever) and then, run MegaProjectNative (you run it from vs) and you are done ;)
