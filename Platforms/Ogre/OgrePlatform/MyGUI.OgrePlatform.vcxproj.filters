@@ -1,56 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreDataManager.cpp">
+    <ClCompile Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\src\MyGUI_OgreDataManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreVertexBuffer.cpp">
+    <ClCompile Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\src\MyGUI_OgreVertexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreDataStream.cpp">
+    <ClCompile Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\src\MyGUI_OgreDataStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreRenderManager.cpp">
+    <ClCompile Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\src\MyGUI_OgreRenderManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreRTTexture.cpp">
+    <ClCompile Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\src\MyGUI_OgreRTTexture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\MU\Platforms\Ogre\OgrePlatform\src\MyGUI_OgreTexture.cpp">
+    <ClCompile Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\src\MyGUI_OgreTexture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_LastHeader.h">
+    <ClInclude Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\include\MyGUI_LastHeader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreDataManager.h">
+    <ClInclude Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\include\MyGUI_OgreDataManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreDataStream.h">
+    <ClInclude Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\include\MyGUI_OgreDataStream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreDiagnostic.h">
+    <ClInclude Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\include\MyGUI_OgreDiagnostic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgrePlatform.h">
+    <ClInclude Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\include\MyGUI_OgrePlatform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreRenderManager.h">
+    <ClInclude Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\include\MyGUI_OgreRenderManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreRTTexture.h">
+    <ClInclude Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\include\MyGUI_OgreRTTexture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreTexture.h">
+    <ClInclude Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\include\MyGUI_OgreTexture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\MU\Platforms\Ogre\OgrePlatform\include\MyGUI_OgreVertexBuffer.h">
+    <ClInclude Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\include\MyGUI_OgreVertexBuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\MU\Platforms\Ogre\OgrePlatform\CMakeLists.txt" />
+    <CustomBuild Include="$(SolutionDir)Platforms\Ogre\OgrePlatform\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
