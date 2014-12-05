@@ -11,9 +11,6 @@
     <ClInclude Include="$(SolutionDir)Common\Input\Win32\PointerManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="$(SolutionDir)Common\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Base">
       <UniqueIdentifier>{B50FD730-0483-4865-8467-89B3B9A34CF8}</UniqueIdentifier>
     </Filter>
